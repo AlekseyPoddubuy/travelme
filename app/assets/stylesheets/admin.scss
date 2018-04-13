@@ -1,0 +1,39 @@
+.admin {
+	margin-bottom: 30px;
+	margin-top: 30px;	
+	p {
+		font-size: 20px;
+		margin: 15px 0 15px 0;
+	}
+}
+.adm-menu {
+	li {
+		padding: 5px 5px 5px 15px ;
+		&:hover {
+			background-color: #d2b51c;
+			cursor: pointer;
+			color: #fff;
+		}
+	}
+}
+.adm-mn {
+	background-color: gold;
+	font-size: 18px;
+	padding: 7px 10px 7px 15px;
+}
+.cnt, .meta {
+	input, select {
+		margin-bottom: 15px;
+	}	
+}
+.admin-block {
+	padding-bottom: 20px;
+}
+
+
+/* Devise login code */
+
+
+.login-in {
+	text-align: center;
+}

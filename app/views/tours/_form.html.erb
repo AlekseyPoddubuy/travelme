@@ -1,0 +1,45 @@
+<%= form_with(model: tour, local: true) do |form| %>
+<% if tour.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(tour.errors.count, "error") %> prohibited this tour from being saved:</h2>
+
+  <ul>
+    <% tour.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="cnt">
+
+  <div class="field">
+    <%= form.text_field :title, id: :tour_title, placeholder: 'Название тура' %>
+  </div>
+
+  <div class="field">
+    Описание тура:
+    <%= form.text_area :description, id: :tour_description %>
+  </div>
+
+
+  <div class="field">
+    <p>Картинка на главной:</p>
+    <%= form.file_field :avatar %>
+  </div>
+
+  <div class="field">
+    <p>Картинка баннер:</p>
+    <%= form.file_field :banner %>
+  </div>
+
+
+  <div class="field">
+    <p>Позже пропадет это поле:</p>
+    <%= form.number_field :priority %>
+  </div>
+
+  <div class="actions">
+  <%= form.submit value: 'Обновить', class: 'btn btn-warning' %>
+  </div>
+  <% end %>
+</div>

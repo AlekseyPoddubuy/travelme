@@ -1,0 +1,41 @@
+.city {
+	background-image: image-url('banner4.jpg');
+	height: 680px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 15px;
+}
+.trigger-banner2 {
+	h1 {
+		padding: 2px 4px 4px 15px;
+		margin-top: 170px;
+		background-color: #fff;
+		opacity: 0.8;
+	}
+	h2 {
+		padding: 2px 4px 4px 15px;
+		background-color: #fff;
+		opacity: 0.8;
+		margin-bottom: 40px;
+	}
+}
+.module2 {
+	text-align: center;
+	img {
+		width: 80%;
+	}
+}
+.best-choice {
+	text-align: center;
+	margin-bottom: 70px;
+	h1 {
+		margin-top: 50px;
+		font-size: 33px;
+	}
+	h2 {
+		color: #6f6f6f;
+		text-transform: uppercase;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+}

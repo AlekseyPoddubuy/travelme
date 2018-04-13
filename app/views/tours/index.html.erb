@@ -1,0 +1,29 @@
+<%= render 'components/header' %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <%= render "components/adm-menu" %>
+    </div>
+    <div class="col-lg-9">
+
+      <table class="table table-striped"  >
+        <thead>
+          <tr>
+            <th>Название вакансии</th>
+            <th colspan="5"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @tours.each do |tour| %>
+          <tr>
+            <td><%= tour.title %></td>
+            <td><%= link_to 'Показать', tour %></td>
+            <td><%= link_to 'Редактировать', edit_tour_path(tour) %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

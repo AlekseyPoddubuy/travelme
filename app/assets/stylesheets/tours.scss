@@ -1,0 +1,43 @@
+// Place all the styles related to the Tours controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.tour-prev {
+	display:inline-block;   
+	position:relative;
+	margin-bottom: 10px;
+}
+.tour-prev .tour-prev_text {
+	display:block;
+	position:absolute;
+	left:0;
+	text-align: center;
+	bottom:50%;
+	width:100%;
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+
+	color:#fff;
+
+	padding:10px;
+	background-color:rgba(0,0,0,.3);
+
+
+}
+.tour-prev h6 {
+	font-size: 40px;
+	margin: 20px 0 20px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.tour-prev span {
+	font-size:12px; 
+}
+.tour-desc {
+	margin: 20px 0 20px 0;
+}
