@@ -1,3 +1,8 @@
+<% content_for :head do %>
+<title><%= @tour.title %></title>
+<meta name="description" content="dsds" />
+<meta name="keywords" content= "ds" />
+<% end %>
 <%= render 'components/header' %>
 <div class="tour-prev">
 	<%= image_tag @tour.banner.url %>
@@ -27,12 +32,12 @@
 					<div>your content</div>
 				</div>
 			</div>
-			-->
-			<div class="col-lg-12">
-				<%= @tour.description.html_safe %>
-			</div>
+		-->
+		<div class="col-lg-12">
+			<%= @tour.description.html_safe %>
 		</div>
 	</div>
+</div>
 </div>
 <%= render 'components/footer' %>
 

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :metatags
 	devise_for :admins
 	resources :photos
 	resources :tours

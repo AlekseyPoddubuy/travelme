@@ -1,11 +1,19 @@
+<% content_for :head do %>
+<% @metatags.where(page: 'index').each do |metatag| %>
+<title><%= metatag.title %></title>
+<meta name="description" content="<%= metatag.description %>" />
+<meta name="keywords" content= "<%= metatag.keywords %>" />
+<% end %>
+<% end %>
+
 <% if @header == 1 %>
 <%= render 'components/headone' %>
 <% elsif @header == 2 %>
 <%= render 'components/headtwo' %>
-<% elsif @header == 3 %>
-<%= render 'components/headthree' %>
-<% elsif @header == 4 %>
-<%= render 'components/headfour' %>
+<%# elsif @header == 3 %>
+<%# render 'components/headthree' %>
+<%# elsif @header == 4 %>
+<%# render 'components/headfour' %>
 <% end %>
 
 <%= render 'components/choose' %>

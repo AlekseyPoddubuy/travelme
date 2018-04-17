@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Metatags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Keywords</th>
+      <th>Description</th>
+      <th>Page</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @metatags.each do |metatag| %>
+      <tr>
+        <td><%= metatag.title %></td>
+        <td><%= metatag.keywords %></td>
+        <td><%= metatag.description %></td>
+        <td><%= metatag.page %></td>
+        <td><%= link_to 'Show', metatag %></td>
+        <td><%= link_to 'Edit', edit_metatag_path(metatag) %></td>
+        <td><%= link_to 'Destroy', metatag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Metatag', new_metatag_path %>

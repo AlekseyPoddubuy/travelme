@@ -1,0 +1,2 @@
+class Metatag < ApplicationRecord
+end
