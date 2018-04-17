@@ -64,7 +64,7 @@ group :development do
 end
 
 group :production do
-  gem 'aws-sdk', '< 3.0'
+  gem 'aws-sdk'
   gem 'pg', '~> 0.21'
   gem 'rmagick', '~> 2.16'
   gem 'webpacker', '~> 3.3'
