@@ -9,7 +9,13 @@
 
 			<div class="col-lg-9">
 				<div class="menu">
-					<p>Бесплатная линия: <span>0 800 832 12 12</span></p>
+					<p>Бесплатная линия: 
+						<% if I18n.locale == :ua %>
+						<span>0 800 832 12 12</span>
+						<% else%>
+						<span>0 800 123 43 12</span>
+						<% end %>
+					</p>
 					<ul>
 						<li><%= link_to "Подобрать тур", '#search' %></li>
 						<li><%= link_to "Горящие туры", index_path %></li>
