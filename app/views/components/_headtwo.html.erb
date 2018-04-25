@@ -6,16 +6,25 @@
 					<%= link_to (image_tag 'logo2.png'), index_path %>
 				</div>
 			</div>
-			<div class="col-lg-10">
+			<div class="col-lg-9">
 				<div class="menu">
 					<ul>
 						<li><%= link_to "Подобрать тур", '#search' %></li>
-						<li><%= link_to "Горящие туры" %></li>
-						<li><%= link_to "Минимальные цены" %></li>
+						<li><%= link_to "Горящие туры", index_path %></li>
+						<li><%= link_to "Минимальные цены", index_path %></li>
 						<li><%= link_to "Франчайзинг", franchise_path %></li>
-						<li><%= link_to "Точки продаж" %></li>					
-						<li><%= link_to_unless_current "Русский", locale: "ru" %></li>
+						<li><%= link_to "Точки продаж", franchise_path %></li>
+					</ul>
+
+				</div>
+
+			</div>
+			<div class="col-lg-1">
+				<div class="switch">
+					<ul>
+						<li><%= link_to_unless_current "Рус", locale: "ru" %></li>
 						<li><%= link_to_unless_current "Укр", locale: "ua" %></li>
+						<li><%= link_to_unless_current "Каз", locale: "kz" %></li>
 					</ul>
 				</div>
 			</div>
@@ -25,12 +34,9 @@
 					<h2>Путешествуй по всему миру</h2>
 					<div class="module">
 
-
 						<% if I18n.locale == :ua %>
 
-						<p>UKRAINIAN MODULE</p>
-
-
+						<%= image_tag 'module.png' %>
 
 						<% else%>
 
@@ -45,7 +51,6 @@
 					</style>
 
 					<% end %>
-
 				</div>
 			</div>
 		</div>
