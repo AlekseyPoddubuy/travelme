@@ -35,7 +35,14 @@
 }
 .menu {
 	text-align: right;
-	margin-top: 33px;
+	p {
+		font-size: 15px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	span {
+		font-size: 23px;
+	}
 }
 .menu a {
 	color: #fff;
