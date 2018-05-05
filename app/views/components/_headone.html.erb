@@ -6,14 +6,17 @@
 					<%= link_to (image_tag 'logo2.png'), index_path %>
 				</div>
 			</div>
-
 			<div class="col-lg-9">
 				<div class="menu">
 					<p>Бесплатная линия: 
 						<% if I18n.locale == :ua %>
-						<span>0 800 832 12 12</span>
-						<% else%>
-						<span>0 800 123 43 12</span>
+						<span>‎+38 044 333 19 45</span>
+						<% elsif I18n.locale == :ru %>
+						<span>‎+7 499 490 61 96</span>
+						<% elsif I18n.locale == :kz %>
+						<span>‎‎+7 717 269 62 57</span>
+						<% else %>
+						<span>‎‎‎+44 203 936 89 09</span>
 						<% end %>
 					</p>
 					<ul>
