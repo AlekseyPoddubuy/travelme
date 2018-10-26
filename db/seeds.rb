@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+contacts = Contact.create(
+	[
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'},
+		{title: 'Киев', phoneone: 0631234567, phonetwo: 0631234567, email: 'test@awesome.com', adress: 'Чорновольска 28 \ 1'}
+	]
+	)

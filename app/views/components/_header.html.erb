@@ -6,7 +6,7 @@
 					<%= link_to (image_tag 'logo2.png'), index_path %>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-10">
 				<div class="menu">
 					<p>Бесплатная линия: 
 						<% if I18n.locale == :ua %>
@@ -20,18 +20,7 @@
 						<li><%= link_to "Горящие туры", index_path %></li>
 						<li><%= link_to "Минимальные цены", index_path %></li>
 						<li><%= link_to "Франчайзинг", franchise_path %></li>
-						<li><%= link_to "Точки продаж", franchise_path %></li>
-					</ul>
-
-				</div>
-
-			</div>
-			<div class="col-lg-1">
-				<div class="switch">
-					<ul>
-						<li><%= link_to_unless_current "Рус", locale: "ru" %></li>
-						<li><%= link_to_unless_current "Укр", locale: "ua" %></li>
-						<li><%= link_to_unless_current "Каз", locale: "kz" %></li>
+						<li><%= link_to "Точки продаж", contacts_path %></li>
 					</ul>
 				</div>
 			</div>

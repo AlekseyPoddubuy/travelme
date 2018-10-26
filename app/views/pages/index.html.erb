@@ -5,17 +5,47 @@
 <meta name="keywords" content= "<%= metatag.keywords %>" />
 <% end %>
 <% end %>
+<div class="island">
+	<div class="header-trans">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="logo">
+						<%= link_to (image_tag 'logo2.png'), index_path %>
+					</div>
+				</div>
+				<div class="col-lg-10">
+					<div class="menu">
+						<p>Бесплатная линия: 
+							<span>0 800 123 43 12</span>
+						</p>
+						<ul>
+							<li><%= link_to "Подобрать тур", '#search' %></li>
+							<li><%= link_to "Горящие туры", index_path %></li>
+							<li><%= link_to "Минимальные цены", index_path %></li>
+							<li><%= link_to "Франчайзинг", franchise_path %></li>
+							<li><%= link_to "Точки продаж", contacts_path %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<% if @header == 1 %>
-<%= render 'components/headone' %>
-<% elsif @header == 2 %>
-<%= render 'components/headtwo' %>
-<%# elsif @header == 3 %>
-<%# render 'components/headthree' %>
-<%# elsif @header == 4 %>
-<%# render 'components/headfour' %>
-<% end %>
+	<div class="search">
+		<h3>Waiting for API module</h3>
+	</div>
+	<style>
+		.search {
+			text-align: center;
+			background: #fff;
+			width: 500px;
+			margin: auto;
+			margin-top: 200px;
+		}		
+	</style>
 
-<%= render 'components/choose' %>
+</div>
+<%= render 'components/choose'%>
 <%= render 'components/hot' %>
-<%= render 'components/footer' %>
+<%= render 'components/footer'%>
