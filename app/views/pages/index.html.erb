@@ -1,12 +1,14 @@
 <% content_for :head do %>
 <% @metatags.where(page: 'index').each do |metatag| %>
-<title><%= metatag.title %></title>
+<title>
+	<%= metatag.title %>
+</title>
 <meta name="description" content="<%= metatag.description %>" />
-<meta name="keywords" content= "<%= metatag.keywords %>" />
+<meta name="keywords" content="<%= metatag.keywords %>" />
 <% end %>
 <% end %>
 <div class="island">
-	<div class="header-trans">
+	<header class="header-trans">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2">
@@ -16,35 +18,37 @@
 				</div>
 				<div class="col-lg-10">
 					<div class="menu">
-						<p>Бесплатная линия: 
+						<p>Бесплатная линия:
 							<span>0 800 123 43 12</span>
 						</p>
 						<ul>
-							<li><%= link_to "Подобрать тур", '#search' %></li>
-							<li><%= link_to "Горящие туры", index_path %></li>
-							<li><%= link_to "Минимальные цены", index_path %></li>
-							<li><%= link_to "Франчайзинг", franchise_path %></li>
-							<li><%= link_to "Точки продаж", contacts_path %></li>
+							<li>
+								<%= link_to "Подобрать тур", '#search' %>
+							</li>
+							<li>
+								<%= link_to "Горящие туры", index_path %>
+							</li>
+							<li>
+								<%= link_to "Минимальные цены", index_path %>
+							</li>
+							<li>
+								<%= link_to "Франчайзинг", franchise_path %>
+							</li>
+							<li>
+								<%= link_to "Точки продаж", contacts_path %>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+	</header>
+	<div class="container offset--top">
+		<div class="search">
+			<div id="itTourWidgetWrapper"></div>
+			<script id="itTourWidgetScriptJsx" src="https://www.ittour.com.ua/tour_search.jsx?id=D84018861479G76N26922000&ver=3"></script>
+		</div>
 	</div>
-
-	<div class="search">
-		<h3>Waiting for API module</h3>
-	</div>
-	<style>
-		.search {
-			text-align: center;
-			background: #fff;
-			width: 500px;
-			margin: auto;
-			margin-top: 200px;
-		}		
-	</style>
-
 </div>
 <%= render 'components/choose'%>
 <%= render 'components/hot' %>

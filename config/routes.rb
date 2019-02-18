@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 	resources :metatags
 	resources :photos
 	resources :tours
-	root to: 'pages#closed'
+	root to: 'pages#index'
 
 	get 'closed' => 'pages#closed', as: :closed
 	get 'index' => 'pages#index', as: :index
