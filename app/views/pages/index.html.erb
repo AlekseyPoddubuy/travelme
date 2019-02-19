@@ -23,7 +23,7 @@
 						</p>
 						<ul>
 							<li>
-								<%= link_to "Подобрать тур", '#search' %>
+								<%= link_to "Подобрать тур", root_path + '#search' %>
 							</li>
 							<li>
 								<%= link_to "Горящие туры", root_path + '#hot' %>
@@ -44,7 +44,7 @@
 		</div>
 	</header>
 	<div class="container offset--top">
-		<div class="search">
+		<div class="search" id="search">
 			<div id="itTourWidgetWrapper"></div>
 			<script id="itTourWidgetScriptJsx" src="https://www.ittour.com.ua/tour_search.jsx?id=21D7945303G146557O119119&ver=3"></script>
 		</div>
