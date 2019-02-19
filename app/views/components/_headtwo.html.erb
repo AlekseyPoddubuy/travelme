@@ -1,4 +1,4 @@
-<div class="koffer">
+<header class="header-two">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2">
@@ -6,73 +6,20 @@
 					<%= link_to (image_tag 'logo2.png'), index_path %>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-10">
 				<div class="menu">
 					<p>Бесплатная линия: 
-						<% if I18n.locale == :ua %>
-						<span>‎+38 044 333 19 45</span>
-						<% elsif I18n.locale == :ru %>
-						<span>‎+7 499 490 61 96</span>
-						<% elsif I18n.locale == :kz %>
-						<span>‎‎+7 717 269 62 57</span>
-						<% else %>
-						<span>‎‎‎+44 203 936 89 09</span>
-						<% end %>
+						<span>0 800 33 29 25</span>
 					</p>
 					<ul>
 						<li><%= link_to "Подобрать тур", '#search' %></li>
 						<li><%= link_to "Горящие туры", index_path %></li>
 						<li><%= link_to "Минимальные цены", index_path %></li>
 						<li><%= link_to "Франчайзинг", franchise_path %></li>
-						<li><%= link_to "Точки продаж", franchise_path %></li>
-					</ul>
-
-				</div>
-
-			</div>
-			<div class="col-lg-1">
-				<div class="switch">
-					<ul>
-						<li><%= link_to_unless_current "Рус", locale: "ru" %></li>
-						<li><%= link_to_unless_current "Укр", locale: "ua" %></li>
-						<li><%= link_to_unless_current "Каз", locale: "kz" %></li>
+						<li><%= link_to "Точки продаж", contacts_path %></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<div class="trigger-banner">
-					<h1>Выбирай туры по душе</h1>
-					<h2>Путешествуй по всему миру</h2>
-					<div class="module">
-
-						<% if I18n.locale == :ua %>
-
-						<%= image_tag 'module.png' %>
-
-						<% else%>
-
-						<div class="tv-search-form" tv-type="1" tv-theme="theme2" tv-width="270" tv-departure="-1"></div>
-						<script type="text/javascript" src="//tourvisor.ru/module/init.js"></script><style>
-						.TVMainForm, .TVOrderHotelBlock {
-							background-color:#4faddc;
-						}
-						.TVFilterForm{
-							background-color:#e0f4ff;
-						}
-					</style>
-
-					<% end %>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="banner">
-				<%= image_tag 'barge.png' %>
-			</div>
-		</div>
-		<div class="col-lg-12">
 		</div>
 	</div>
-</div>
-</div>
-
+</header>
