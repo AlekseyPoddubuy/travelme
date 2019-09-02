@@ -1,17 +1,22 @@
-<%= render 'components/header' %>
+<%= render 'components/headtwo' %>
 <div class="world">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="trigger">
+          <% if @contacts.count != 0 %>
           <h1>Точки присутсвия TRAVEL ME AGENCY</h1>
+          <% else %>
+          <h1>Раздел на модерации</h1>
+          <% end %>
         </div>
 
+        <% if @contacts.count != 0 %>
         <div class="contacts">
           <table class="table table-striped">
             <thead>
               <tr>
-              <th scope="col">Город</th>
+                <th scope="col">Город</th>
                 <th scope="col">Номера телефонов</th>
                 <th scope="col">Емейл</th>
                 <th scope="col">Адресс</th>
@@ -24,18 +29,20 @@
                 <td><%= contact.phoneone %> | <%= contact.phonetwo %></td>
                 <td><%= contact.email %></td>
                 <td><%= contact.adress %></td>
-   <!--
+                <!--
                 <td><%= link_to 'Show', contact %></td>
                 <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
                 <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               -->
-            </tr>
-            <% end %>
-          </tbody>
-        </table>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
 
+        </div>
+
+        <% end %>
       </div>
     </div>
   </div>
-</div>
 </div>
