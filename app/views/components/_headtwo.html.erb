@@ -7,18 +7,28 @@
 				</div>
 			</div>
 			<div class="col-lg-10">
-				<div class="menu">
-					<p>Бесплатная линия: 
-						<span>0 800 33 29 25</span>
-					</p>
-					<ul>
-						<li><%= link_to "Подобрать тур", root_path + '#search' %></li>
-						<li><%= link_to "Горящие туры", root_path + '#hot' %></li>
-						<li><%= link_to "Минимальные цены", root_path + '#hot'%></li>
-						<li><%= link_to "Франчайзинг", franchise_path %></li>
-						<li><%= link_to "Точки продаж", contacts_path %></li>
+				<nav class="menu">
+					<a class="menu__phone" href="tel:+380443336732">+38 044 333 67 32 /</a>
+					<a class="menu__phone" href="tel:+442080896595">+442 080 896 595 /</a>
+					<a class="menu__phone" href="tel:+74951282039">+7 495 128 20 39</a>
+					<ul class="menu__ul">
+						<li class="menu__li">
+							<%= link_to "Подобрать тур", root_path + '#search', class: 'menu__link' %>
+						</li>
+						<li class="menu__li">
+							<%= link_to "Горящие туры", root_path + '#hot', class: 'menu__link' %>
+						</li>
+						<li class="menu__li">
+							<%= link_to "Минимальные цены", root_path + '#hot', class: 'menu__link' %>
+						</li>
+						<li class="menu__li">
+							<%= link_to "Франчайзинг", franchise_path, class: 'menu__link' %>
+						</li>
+						<li class="menu__li">
+							<%= link_to "Точки продаж", contacts_path, class: 'menu__link' %>
+						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</div>
 	</div>

@@ -8,45 +8,12 @@
 <% end %>
 <% end %>
 <div class="island">
-	<header class="header-trans">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2">
-					<div class="logo">
-						<%= link_to (image_tag 'logo2.png'), index_path %>
-					</div>
-				</div>
-				<div class="col-lg-10">
-					<div class="menu">
-						<p>Бесплатная линия:
-							<span>0 800 33 29 25</span>
-						</p>
-						<ul>
-							<li>
-								<%= link_to "Подобрать тур", root_path + '#search' %>
-							</li>
-							<li>
-								<%= link_to "Горящие туры", root_path + '#hot' %>
-							</li>
-							<li>
-								<%= link_to "Минимальные цены", root_path + '#hot' %>
-							</li>
-							<li>
-								<%= link_to "Франчайзинг", franchise_path %>
-							</li>
-							<li>
-								<%= link_to "Точки продаж", contacts_path %>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<%= render "components/header" %>
 	<div class="container offset--top">
 		<div class="search" id="search">
 			<div id="itTourWidgetWrapper"></div>
-			<script id="itTourWidgetScriptJsx" src="https://www.ittour.com.ua/tour_search.jsx?id=21D7945303G146557O119119&ver=3"></script>
+			<script id="itTourWidgetScriptJsx"
+				src="https://www.ittour.com.ua/tour_search.jsx?id=21D7945303G146557O119119&ver=3"></script>
 		</div>
 	</div>
 </div>

@@ -1,25 +1,37 @@
-.trigger-franchise {
-	h3 {
-		margin: 30px 0 30px 0;
-		font-size: 36px;
-	}
+.franchise {
+	padding-top: 30px;
 }
+
+.franchise__h1,
+.franchise__h2 {
+	font-size: 32px;
+}
+
 .propose {
 	background-image: image-url('world.jpg');
 	margin: 20px 0 0 0;
-	text-align: center;
+	padding: 50px 0 20px;
 }
-.franch-back {
-	margin-top: 30px;
-}
-.open {
-	margin-top: 50px;
+
+.propose__h2 {
 	font-size: 20px;
 }
-.left {
-	text-align: left;
+
+.franchise__img {
+	margin-bottom: 30px;
 }
+
 .buy {
 	margin: 50px 0 50px 0;
 	text-align: center;
+}
+
+.buy--red {
+	color: red;
+	font-size: 24px;
+}
+
+.buy__phone {
+	margin-bottom: 20px;
+	display: inline-block;
 }
