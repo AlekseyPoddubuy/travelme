@@ -1,12 +1,4 @@
-<% content_for :head do %>
-<% @metatags.where(page: 'index').each do |metatag| %>
-<title>
-	<%= metatag.title %>
-</title>
-<meta name="description" content="<%= metatag.description %>" />
-<meta name="keywords" content="<%= metatag.keywords %>" />
-<% end %>
-<% end %>
+
 <div class="island">
 	<%= render "components/header" %>
 	<div class="container offset--top">
