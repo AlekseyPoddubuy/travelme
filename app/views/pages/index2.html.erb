@@ -1,50 +1,21 @@
-<div class="city">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2">
-				<div class="logo">
-					<%= image_tag 'logo2.png' %>
-
-<!--
-					<p class="log">travel <span>ME</span></p>
-					<p class="agency">agency</p>
-				-->
-			</div>
+<% content_for :head do %>
+<% @metatags.where(page: 'index').each do |metatag| %>
+<title>
+	<%= metatag.title %>
+</title>
+<meta name="description" content="<%= metatag.description %>" />
+<meta name="keywords" content="<%= metatag.keywords %>" />
+<% end %>
+<% end %>
+<div class="island">
+	<%= render "components/header" %>
+	<div class="container offset--top">
+		<div class="search" id="search">
+			<script type="text/javascript" language="JavaScript"
+				src="//tourclient.ru/f/jsboot/crm155838/find_tour_form?style=full&conf=default"></script>
 		</div>
-		<div class="col-lg-10">
-			<div class="menu">
-				<ul>
-					<li><%= link_to "Подобрать тур", '#search' %></li>
-					<li><a href="#">Горящие туры</a></li>
-					<li><a href="#">Минимальные цены</a></li>
-					<li><a href="#">Точки продаж</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="trigger-banner2">
-				<h1>Выбирай туры по душе</h1>
-				<h2>Путешествуй по всему миру</h2>
-			</div>
-		</div>
-		<div class="col-lg-6">
-			<div class="banner">
-			</div>
-		</div>
-
-		<div class="col-lg-12">
-			<div class="module2">
-				<%= image_tag 'module.png' %>
-			</div>
-		</div>
-
 	</div>
 </div>
-</div>
-
-<!--
-<%= render 'components/best-choice' %>
--->
-<%= render 'components/choose' %>
+<%# render 'components/choose'%>
 <%= render 'components/hot' %>
-<%= render 'components/footer' %>
+<%= render 'components/footer'%>
