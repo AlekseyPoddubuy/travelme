@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
 	get 'closed' => 'pages#closed', as: :closed
 	get 'index' => 'pages#index', as: :index
+	get 'results' => 'pages#results', as: :results
 	# get 'index2' => 'pages#index2', as: :index2
 	get 'franchise' => 'pages#franchise', as: :franchise
 	get 'admin' => 'pages#admin', as: :admin
