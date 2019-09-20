@@ -8,15 +8,14 @@
 <% end %>
 <% end %>
 <div class="island">
-<%= render "components/header" %>
+	<%= render "components/header" %>
 	<div class="container offset--top">
-		<div class="search" id="search">
-			<div id="itTourWidgetWrapper"></div>
-			<script id="itTourWidgetScriptJsx"
-				src="https://www.ittour.com.ua/tour_search.jsx?id=21D7945303G146557O119119&ver=3"></script>
-		</div>
+		<script type="text/javascript" language="JavaScript"
+			src="//tourclient.ru/f/jsboot/crm155838/find_tour_form?style=full&conf=default"></script>
+		<script type="text/javascript" language="JavaScript"
+			src="//tourclient.ru/f/jsboot/crm155838/find_tour_offers?style=default&conf=default"></script>
 	</div>
 </div>
 <%# render 'components/choose'%>
-<%# render 'components/hot' %>
+<%= render 'components/hot' %>
 <%= render 'components/footer'%>
