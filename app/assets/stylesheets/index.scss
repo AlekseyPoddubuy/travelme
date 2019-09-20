@@ -1,20 +1,17 @@
 .island {
 	background-image: image-url('island.jpg');
 	background-size: cover;
-    padding-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 .header-trans {
 	padding: 15px 0 15px 0;
 }
 
-.menu {
-	p {
-		span {
-			font-weight: bold;
-			color: #fff;
-		}
-	}
+.menu__call {
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 700;
 }
 
 .menu__phone {
