@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149538697-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149538697-1');
+  </script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= yield :head %>
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'landing', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+
+<body>
+  <%= yield %>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
 	before_action :authenticate_admin!, only: [:admin]
+	layout "landing", only: [:landing]
 
 	def index
 		@header = rand(1..2)
@@ -13,5 +14,9 @@ class PagesController < ApplicationController
 
 	def admin
 		@tours = Tour.all
+	end
+
+	def landing
+		@comment = Comment.new
 	end
 end

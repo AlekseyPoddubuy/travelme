@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 	# get 'index2' => 'pages#index2', as: :index2
 	get 'franchise' => 'pages#franchise', as: :franchise
 	get 'admin' => 'pages#admin', as: :admin
+	get 'landing' => 'pages#landing', as: :landing
+	resources :comments, only: [:new, :create]	
 
 	scope ":locale" do
 	end

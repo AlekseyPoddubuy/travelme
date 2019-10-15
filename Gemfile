@@ -33,6 +33,7 @@ gem "jquery-slick-rails"
 gem 'devise'
 gem 'aws-sdk', '~> 3'
 gem 'popper_js', '~> 1.12.9'
+gem 'mail_form'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

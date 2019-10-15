@@ -1,0 +1,247 @@
+@import "bootstrap/dist/css/bootstrap-grid.min";
+@import "normalize";
+@import "modificators";
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #000000;
+}
+
+body {
+  font-family: "Play", sans-serif !important ;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// Banner
+
+.banner {
+  background-image: image-url("island.jpg");
+  background-image: image-url("landing/image2.jpg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo__img {
+  margin-top: 10px;
+}
+
+.phones {
+  text-align: right;
+  margin-top: 13px;
+}
+
+.phones__call {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.phones__link {
+  font-size: 24px;
+  color: #e3505c;
+  font-weight: 700;
+}
+
+.nav {
+  text-align: right;
+  margin-top: 13px;
+}
+
+.nav__link {
+  color: #e3505c;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.banner-triggers {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 45px 0;
+  margin-top: 120px;
+}
+
+.banner-triggers__h1 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-triggers__h2 {
+  color: #000000;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.banner-triggers__h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #e3505c;
+}
+
+.pink--button {
+  background-color: #e3505c;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 75px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border-radius: 7px;
+}
+
+// Ways
+
+.ways__h1 {
+  font-size: 28px;
+}
+
+.ways-item {
+  margin-bottom: 10px;
+}
+
+.ways-item__p {
+  background-color: #e3505c;
+  margin: 0;
+  color: #ffffff;
+  margin-top: -4px;
+  font-size: 18px;
+  padding: 12px 0;
+}
+
+// GET
+
+.get {
+  background-color: #edebeb;
+}
+
+.get__li {
+  padding-bottom: 4px;
+}
+
+// Steps
+
+.steps {
+  margin-top: -5px;
+}
+
+.steps-bgc {
+  background-image: image-url("landing/steps-items.png");
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.steps-bgc__p {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.steps-bgc--man {
+  max-width: 150px;
+}
+
+.steps-item__p {
+  margin: 0;
+}
+
+// Form
+
+.form {
+  margin-top: 20px;
+}
+
+.form__input {
+  padding: 10px 5px 10px 15px;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 25px;
+}
+
+.form__textarea {
+  padding: 15px 5px 10px 15px;
+  border: none;
+  border-radius: 7px;
+  min-height: 90px;
+  margin-bottom: 25px;
+}
+
+.form__btn {
+  background-color: #e3505c;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+// More
+
+.more__h5 {
+  font-size: 2em;
+  margin: 0 0 30px;
+}
+
+.more-item {
+  background-color: #edebeb;
+  padding: 15px 35px;
+  border-radius: 7px;
+}
+
+.more-item__title {
+}
+
+.more-item__span {
+  color: #e3505c;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+// Contacts
+
+.contacts__p {
+  color: #e3505c;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.contacts__link {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contacts__desc {
+  margin: 0 0 5px;
+  text-indent: 20px;
+}
+
+// Footer
+
+.footer {
+  background-color: #e3505c;
+  color: #ffffff;
+  padding: 10px 0;
+}
