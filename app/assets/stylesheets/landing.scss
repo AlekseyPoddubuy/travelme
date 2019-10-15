@@ -27,7 +27,6 @@ body {
 // Banner
 
 .banner {
-  background-image: image-url("island.jpg");
   background-image: image-url("landing/image2.jpg");
   height: 100vh;
   background-size: cover;
@@ -246,4 +245,70 @@ body {
   padding: 10px 0;
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .banner {
+    height: initial;
+  }
+  .phones {
+    text-align: center;
+  }
+  .phones__call {
+    display: none;
+  }
+  .phones__link {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  
+  .banner-triggers {
+    margin-top: 20px;
+  }
+  .pink--button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .get__img {
+    display: none;
+  }
+
+  .steps-bgc {
+    background-image: none;
+    height: auto;
+  }
+
+  .steps-item {
+    margin-bottom: 15px;
+  }
+
+  .steps-row--two {
+    padding: 0;
+  }
+
+  .more-item {
+    margin-bottom: 15px;
+  }
+
+  .offset-top--l {
+    margin-top: 0;
+  }
+
+  .contacts__desc {
+    margin-top: 10px;
+  }
+}
