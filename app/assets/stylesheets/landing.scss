@@ -53,6 +53,10 @@ body {
   font-size: 24px;
   color: #e3505c;
   font-weight: 700;
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .nav {
@@ -66,6 +70,10 @@ body {
   padding: 10px 15px;
   display: inline-block;
   font-size: 16px;
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .banner-triggers {
@@ -106,6 +114,11 @@ body {
   text-transform: uppercase;
   padding: 15px 60px;
   border-radius: 7px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #e3505c;
+  }
 }
 
 // Ways
@@ -116,6 +129,13 @@ body {
 
 .ways-item {
   margin-bottom: 10px;
+
+  &:hover {
+    .ways-item__p {
+      background-color: #ffffff;
+      color: #e3505c;
+    }
+  }
 }
 
 .ways-item__p {
@@ -157,6 +177,10 @@ body {
 
 .steps-bgc--man {
   max-width: 150px;
+
+  &:hover {
+    max-width: 170px;
+  }
 }
 
 .steps-item__p {
@@ -191,6 +215,12 @@ body {
   border-radius: 7px;
   padding: 15px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #e3505c;
+  }
 }
 
 // More
@@ -274,7 +304,7 @@ body {
   .nav {
     display: none;
   }
-  
+
   .banner-triggers {
     margin-top: 20px;
   }

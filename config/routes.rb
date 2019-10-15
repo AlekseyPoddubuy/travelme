@@ -11,10 +11,8 @@ Rails.application.routes.draw do
 	get 'index' => 'pages#index', as: :index
 	get 'results' => 'pages#results', as: :results
 	get 'order-form' => 'pages#orderForm', as: :orderForm
-	# get 'index2' => 'pages#index2', as: :index2
-	get 'franchise' => 'pages#franchise', as: :franchise
 	get 'admin' => 'pages#admin', as: :admin
-	get 'landing' => 'pages#landing', as: :landing
+	get 'franchise' => 'pages#landing', as: :franchise
 	resources :comments, only: [:new, :create]	
 
 	scope ":locale" do

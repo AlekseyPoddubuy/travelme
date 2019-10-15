@@ -11,13 +11,11 @@
 
     gtag('config', 'UA-149538697-1');
   </script>
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
+	<%= favicon_link_tag %>
   <%= yield :head %>
   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-
   <%= csrf_meta_tags %>
-
   <%= stylesheet_link_tag    'landing', media: 'all' %>
   <%= javascript_include_tag 'application' %>
 </head>
