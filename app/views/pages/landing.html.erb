@@ -128,7 +128,12 @@
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
-          <%= image_tag "landing/villa.jpg" %>
+          <picture>
+            <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/villa-l.jpg' %>">
+            <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/villa-m.jpg' %>">
+            <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/villa-s.jpg' %>">
+            <img src="<%= image_url 'landing/villa-l.jpg' %>" alt="" />
+          </picture>
           <p class="ways-item__p">
             Аренда вилл, апартаментов
           </p>
@@ -182,7 +187,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-7 padding-lr--z ">
-        <%= image_tag "landing/bg-left.png", class: "get__img" %>
+        <picture>
+          <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/bg-left.png' %>">
+          <img src="<%= image_url 'landing/bg-left.png' %>" alt="" class="get__img" />
+        </picture>
       </div>
       <div class="col-lg-5">
         <p class="get__p">
