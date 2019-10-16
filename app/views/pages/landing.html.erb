@@ -2,7 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-2">
-        <%= image_tag "logo2.png", class: "logo__img" %>
+          <picture>
+              <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/logo-l.png' %>">
+              <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/logo-s.png' %>">
+              <img src="<%= image_url 'landing/logo-l.png' %>" alt="Travel-me agency" class="logo__img" />
+            </picture>
       </div>
       <div class="col-lg-10">
         <div class="phones">
