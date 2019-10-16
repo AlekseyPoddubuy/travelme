@@ -76,7 +76,12 @@
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
-          <%= image_tag "landing/visa.jpg" %>
+            <picture>
+                <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/visa-l.jpg' %>">
+                <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/visa-m.jpg' %>">
+                <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/visa-s.jpg' %>">
+                <img src="<%= image_url 'landing/visa-l.jpg' %>" alt="" />
+              </picture>
           <p class="ways-item__p">
             Визовая поддержка
           </p>
