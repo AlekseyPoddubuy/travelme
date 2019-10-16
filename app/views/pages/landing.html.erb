@@ -6,10 +6,10 @@
       </div>
       <div class="col-lg-10">
         <div class="phones">
-					<span class="phones__call">Колл-центр:</span>
+          <span class="phones__call">Колл-центр:</span>
           <a class="phones__link" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
-					<a class="phones__link" href="tel:+442080896595">+442 080 896 595 /</a>
-					<a class="phones__link" href="tel:+74951282039">+7 495 128 20 39</a>
+          <a class="phones__link" href="tel:+442080896595">+442 080 896 595 /</a>
+          <a class="phones__link" href="tel:+74951282039">+7 495 128 20 39</a>
         </div>
         <nav class="nav">
           <%= link_to "Главная", index_path, class: "nav__link" %>
@@ -63,7 +63,12 @@
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
-          <%= image_tag "landing/national.jpg" %>
+          <picture>
+            <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/image.jpg' %>">
+            <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/national-m.jpg' %>">
+              <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/image2.jpg' %>">
+            <img src="<%= image_url 'landing/national-l.jpg' %>" alt="" />
+          </picture>
           <p class="ways-item__p">
             Международный туризм
           </p>
@@ -413,7 +418,7 @@
 
 <footer class="footer text--center">
   <p class="footer__p">
-      Международная сеть туристических агентств Travel-me.agency. Все права защищены. © 2019
+    Международная сеть туристических агентств Travel-me.agency. Все права защищены. © 2019
   </p>
 </footer>
 
