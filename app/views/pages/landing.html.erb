@@ -102,7 +102,12 @@
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
-          <%= image_tag "landing/ins.jpg" %>
+          <picture>
+            <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/ins-l.jpg' %>">
+            <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/ins-m.jpg' %>">
+            <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/ins-s.jpg' %>">
+            <img src="<%= image_url 'landing/ins-l.jpg' %>" alt="" />
+          </picture>
           <p class="ways-item__p">
             Страхование
           </p>
@@ -110,7 +115,12 @@
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
-          <%= image_tag "landing/car.jpg" %>
+          <picture>
+            <source media="(min-width: 1200px)" alt="img_1" srcset="<%= image_url 'landing/car-l.jpg' %>">
+            <source media="(min-width: 768px)" alt="img_1" srcset="<%= image_url 'landing/car-m.jpg' %>">
+            <source media="(min-width: 100px)" alt="img_1" srcset="<%= image_url 'landing/car-s.jpg' %>">
+            <img src="<%= image_url 'landing/car-l.jpg' %>" alt="" />
+          </picture>
           <p class="ways-item__p">
             Аренда авто
           </p>
