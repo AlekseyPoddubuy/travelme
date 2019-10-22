@@ -7,7 +7,7 @@ class Comment < MailForm::Base
 	def headers 
 		{
 			:subject => "Франшиза Travel-me",
-			:to => "kymotocycle@gmail.com",
+			:to => "franchise@travel-me.agency",
 			:from => %("#{name}" <it@euroukrgroup.com>)
 		}
 	end
