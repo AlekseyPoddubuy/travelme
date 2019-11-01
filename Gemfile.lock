@@ -614,6 +614,8 @@ GEM
     execjs (2.7.0)
     ffi (1.9.23)
     formatador (0.2.5)
+    friendly_id (5.3.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     guard (2.14.2)
@@ -795,6 +797,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
+  friendly_id
   guard-livereload (~> 2.5)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.1, >= 4.1.1)
@@ -823,4 +826,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.6
+   1.17.1

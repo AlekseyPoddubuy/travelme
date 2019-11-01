@@ -8,7 +8,10 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( landing.css )
-
+Rails.application.config.assets.precompile += %w( jqformap.js )
+Rails.application.config.assets.precompile += %w( map_init-min.js )
+Rails.application.config.assets.precompile += %w( map_data.js )
+Rails.application.config.assets.precompile += %w( cusel-2.5-min.js )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
