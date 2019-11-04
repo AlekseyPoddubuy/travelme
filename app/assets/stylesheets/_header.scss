@@ -1,7 +1,47 @@
-.header-two {
-	background-color: #00bcd4;
-	padding: 15px 0;
+.menu {
+	text-align: right;
+	margin-top: 10px;
 }
+
+.menu__call {
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+.menu__phone {
+	font-size: 18px;
+	color: #fff;
+
+	&:hover {
+		color: gold;
+		text-decoration: none;
+	}
+}
+
+.menu__link {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+
+	&:hover {
+		text-decoration: none;
+		color: #000;
+		border-bottom: 3px solid red;
+		padding-bottom: 12px;
+	}
+}
+
+.menu__ul {
+	margin-top: 13px;
+}
+
+.menu__li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
 
 .switch {
 	text-align: center;

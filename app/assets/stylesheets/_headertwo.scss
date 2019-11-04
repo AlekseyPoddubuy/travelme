@@ -1,0 +1,47 @@
+.header-two {
+	padding: 15px 0 10px;
+}
+
+.menu-two {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.menu-two__call {
+	font-size: 18px;
+	color: #e3505c;
+	font-weight: 700;
+}
+
+.menu-two__phone {
+	font-size: 18px;
+	color: #e3505c;
+
+	&:hover {
+		color: gold;
+		text-decoration: none;
+	}
+}
+
+.menu-two__link {
+	color: #e3505c;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+
+	&:hover {
+		text-decoration: none;
+		color: #000;
+		border-bottom: 3px solid red;
+		padding-bottom: 12px;
+	}
+}
+
+.menu-two__ul {
+	margin-top: 13px;
+}
+
+.menu-two__li {
+	display: inline-block;
+	margin-left: 20px;
+}
