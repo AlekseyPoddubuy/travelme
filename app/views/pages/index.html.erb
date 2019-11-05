@@ -1,12 +1,3 @@
-<% content_for :head do %>
-<% @metatags.where(page: 'index').each do |metatag| %>
-<title>
-	<%= metatag.title %>
-</title>
-<meta name="description" content="<%= metatag.description %>" />
-<meta name="keywords" content="<%= metatag.keywords %>" />
-<% end %>
-<% end %>
 <div class="island">
 	<%= render "components/header" %>
 	<div class="container offset--top">
@@ -37,3 +28,19 @@
 		border-radius: 12px;
 	}
 </style>
+
+
+<% content_for :seo do %>
+<title>Сеть туристических агентств Travel Me Agency</title>
+<meta name="description"
+	content="Travel Me Agency">
+<meta name="keywords"
+	content="туристическое агентство, купить тур">
+<meta property="og:image"
+	content="https://travel-me.agency/assets/logo2-69b66fa4f7c1cb5bdaf478e4d4a85dbfe36308ef665cab1a9e8aa81d1c4f3825.png" />
+<link rel="canonical" href="<%= request.url %>" itemprop="url">
+<meta property="og:site_name" content="travel-me.agency | TRAVEL ME AGENCY">
+<meta property="og:url" content="https://travel-me.agency/">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<% end %>
