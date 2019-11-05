@@ -167,14 +167,17 @@
     </div>
     <%= form_for @comment, :html => {class: 'form'} do |f| %>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <%= f.text_field :name, required: true, placeholder: 'Ваше ФИО', class: "form__input bgc--grey" %>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <%= f.text_field :phone, required: true, placeholder: 'Ваш номер телефона', class: "form__input bgc--grey" %>
       </div>
-      <div class="col-lg-4">
-        <%= f.text_field :mail, required: true, placeholder: 'Ваш email', class: "form__input bgc--grey" %>
+      <div class="col-lg-3">
+        <%= f.text_field :city, required: true, placeholder: 'Ваш город', class: "form__input bgc--grey" %>
+      </div>
+      <div class="col-lg-3">
+        <%= f.text_field :mail, placeholder: 'Ваш email', class: "form__input bgc--grey" %>
       </div>
       <div class="col-lg-12">
         <%= f.text_area :text, required: true, placeholder: ' Ваши пожелания или замечания', class: "form__textarea bgc--grey" %>
@@ -320,13 +323,16 @@
     </div>
     <%= form_for @comment, :html => {class: 'form'} do |f| %>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <%= f.text_field :name, required: true, placeholder: 'Ваше ФИО', class: "form__input" %>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <%= f.text_field :phone, required: true, placeholder: 'Ваш номер телефона', class: "form__input" %>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-3">
+        <%= f.text_field :city, required: true, placeholder: 'Ваш город', class: "form__input" %>
+      </div>
+      <div class="col-lg-3">
         <%= f.text_field :mail, required: true, placeholder: 'Ваш email', class: "form__input" %>
       </div>
       <div class="col-lg-12">
@@ -403,6 +409,9 @@
           </div>
           <div class="col-lg-12">
             <%= f.text_field :phone, required: true, placeholder: 'Ваш номер телефона', class: "form__input" %>
+          </div>
+          <div class="col-lg-12">
+            <%= f.text_field :city, required: true, placeholder: 'Ваш город', class: "form__input" %>
           </div>
           <div class="col-lg-12">
             <%= f.text_field :mail, required: true, placeholder: 'Ваш email', class: "form__input" %>
