@@ -1,12 +1,4 @@
-<% content_for :head do %>
-<% @metatags.where(page: 'franchise').each do |metatag| %>
-<title><%= metatag.title %></title>
-<meta name="description" content="<%= metatag.description %>" />
-<meta name="keywords" content="<%= metatag.keywords %>" />
-<% end %>
-<% end %>
 <%= render 'components/headtwo' %>
-
 <section class="franchise">
 	<div class="container">
 		<div class="row">
@@ -155,7 +147,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="buy">
 	<div class="container">
 		<div class="row">
@@ -202,5 +193,4 @@
 		</div>
 	</div>
 </section>
-
 <%= render 'components/footer' %>

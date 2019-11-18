@@ -2,7 +2,18 @@
 <html lang="ru">
 
 <head>
-	<%= yield :seo %>
+  <title>Франшиза сети туристических агентств Travel-Me.Agency</title>
+  <meta name="description" content="Купи франшизу туристического агентства Travel-Me.Agency всего за 1 доллар сша.. и открой свой бизнес уже завтра вместе с нами!">
+  <meta name="keywords" content="купить франшизу турагентства, турагентство франшиза, открыть турагентство по франшизе, франшиза турагентства цена, 
+  франчайзинг туризм, франшизы турагенств, франчайзинг турагентство">
+  <meta property="og:image"
+    content="https://travel-me.agency/assets/logo2-69b66fa4f7c1cb5bdaf478e4d4a85dbfe36308ef665cab1a9e8aa81d1c4f3825.png" />
+  <link rel="canonical" href="<%= request.url %>" itemprop="url">
+  <meta property="og:site_name" content="travel-me.agency | TRAVEL-ME.AGENCY">
+  <meta property="og:url" content="<%= request.url %>">
+  <meta property="og:description" content="Купи франшизу туристического агентства Travel-Me.Agency всего за 1 доллар сша.. и открой свой бизнес уже завтра вместе с нами!">
+  <meta property="og:type" content="website">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149538697-1"></script>
   <script>
@@ -14,7 +25,6 @@
   </script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= favicon_link_tag %>
-  <%= yield :head %>
   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'landing', media: 'all' %>
