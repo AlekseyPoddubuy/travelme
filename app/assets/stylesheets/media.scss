@@ -1,25 +1,35 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {}
+@media only screen and (max-width: 1200px) {
+}
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .menu {
-        text-align: center !important;
-    }
+@media only screen and (max-width: 992px) {
+  .menu {
+    text-align: center !important;
+  }
+  .world {
+    display: none;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .menu__ul {
-        display: none;
-    }
+@media only screen and (max-width: 768px) {
+  .menu__ul {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .offset--top {
-        padding-top: 50px !important;
-    }
+@media only screen and (max-width: 480px) {
+  .offset--top {
+    padding-top: 50px !important;
+  }
+  .island {
+      
+  }
+  .island__h1 {
+    display: none;
+  }
 }
