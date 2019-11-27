@@ -1,41 +1,45 @@
 <div class="island">
 	<%= render "components/header" %>
-	<div class="container offset--top">
-		<div class="module">
-			<script type="text/javascript" language="JavaScript"
-				src="//tourclient.ru/f/jsboot/crm155838/find_tour_form?style=full&conf=default"></script>
+	<div class="container">
+		<div class="col-lg-12">
+			<h1 class="island__h1">
+				Отдыхайте вместе с
+				<span class="island__h1--transparent">
+					Travel-me.agency
+				</span>
+			</h1>
 		</div>
+		<script>
+			var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
+			var osDefaultDeparture = ''; /* ID города или название на языке модуля */
+			var osDefaultDuration = ''; /* Начальная длительность в днях */
+			var osTarget = ''; /* URL для отправки формы */
+			var osContainer = '.results'; /* Элемент DIV, в котором выводить результаты поиска */
+			var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+			var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
+			var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
+			var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
+			var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
+		<script src="https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e"></script>
+		<script src="https://export.otpusk.com/js/onsite/"></script>
+		<script src="https://export.otpusk.com/js/order"></script>
 	</div>
 </div>
-
-<section class="test">
-	<div class="container results">
-		<script type="text/javascript" language="JavaScript"
-			src="//tourclient.ru/f/jsboot/crm155838/find_tour_offers?style=default&conf=default"></script>
-	</div>
-</section>
+	<div class="container">
+			<div class="results"></div>
+</div>
 <%= render 'components/hot' %>
 <%= render 'components/footer'%>
 
-<style>
-	.results {
-		margin-top: -55px;
-	}
-
-	.module {
-		background-color: rgba(255, 255, 255, 0.84);
-		padding: 18px 10px 8px;
-		border-radius: 12px;
-	}
-</style>
-
-
 <% content_for :seo do %>
 <title>Сеть туристических агентств Travel Me Agency</title>
-<meta name="description"
-	content="Travel Me Agency">
-<meta name="keywords"
-	content="туристическое агентство, купить тур">
+<meta name="description" content="Travel Me Agency">
+<meta name="keywords" content="туристическое агентство, купить тур">
 <meta property="og:image"
 	content="https://travel-me.agency/assets/logo2-69b66fa4f7c1cb5bdaf478e4d4a85dbfe36308ef665cab1a9e8aa81d1c4f3825.png" />
 <link rel="canonical" href="<%= request.url %>" itemprop="url">
@@ -44,3 +48,15 @@
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <% end %>
+
+
+<script>
+
+$(".new_f-form-submit").click(function(){
+  $(".results").css("padding", "40px 0");
+});
+
+new_f-form-submit
+
+
+</script>

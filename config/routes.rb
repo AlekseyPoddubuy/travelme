@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
 	get 'closed' => 'pages#closed', as: :closed
 	get 'index' => 'pages#index', as: :index
+	get 'populars' => 'pages#populars', as: :populars
 	get 'results' => 'pages#results', as: :results
 	get 'order-form' => 'pages#orderForm', as: :orderForm
 	get 'admin' => 'pages#admin', as: :admin

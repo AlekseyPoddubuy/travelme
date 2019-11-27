@@ -1,0 +1,182 @@
+<div class="island">
+  <%= render "components/header" %>
+  <div class="container">
+    <div class="col-lg-12">
+      <h1 class="populars__h1">
+        Популярные туры от
+        <span class="island__h1--transparent">
+          Travel-me.agency
+        </span>
+      </h1>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="populars">
+  <link rel="stylesheet" media="screen" href="https://export.otpusk.com/os/hot-module.css" />
+  <style>
+    .populars {
+      margin-top: -215px;
+      /* background-color: rgba(255, 255, 255, 0.5); */
+    }
+
+    .populars__h1 {
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      font-size: 50px;
+      padding: 100px 0 270px;
+    }
+
+    /* Відступи модуля */
+    .os-top-countries {
+      padding: 20px 17px 0;
+    }
+
+    /* Відступи між колонками */
+    .os-top-countries-image ul {
+      margin-left: -20px;
+    }
+
+    .os-top-countries-image .os-top-countries-item {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      max-width: 240px;
+      height: auto;
+      position: static;
+      float: none;
+    }
+
+    .os-top-countries-text .os-top-countries-item {
+      padding-left: 26px;
+      height: auto;
+      position: static;
+      float: none;
+    }
+
+    .os-top-countries-text ul {
+      margin-left: -26px;
+    }
+
+    /* Стилі туру */
+    .os-top-countries-text .os-top-countries-item {
+      margin-bottom: 18px;
+      max-width: 287px;
+    }
+
+    .os-top-countries-image .os-top-countries-item>a {
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+    }
+
+    .os-top-countries-image .os-top-countries-item>a:hover {
+      -webkit-filter: contrast(1.2);
+      filter: contrast(1.2);
+    }
+
+    /* Стилі лінії в текстовій версії */
+    .os-top-countries-text .os-top-countries-item>a:before {
+      top: 14px;
+      left: 35px;
+      height: 1px;
+      background-color: #e1e1e1;
+    }
+
+    /* Назва країни */
+    .os-top-countries-image .os-top-countries-item .os-country-name {
+      color: #fff;
+      line-height: 21px;
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .os-top-countries-text .os-top-countries-item .os-country-name {
+      line-height: 26px;
+      font-size: 14px;
+      color: #333;
+      font-family: sans-serif;
+    }
+
+    /* Блок з ціною */
+    .os-top-countries-image .os-top-countries-item .os-country-price {
+      background-color: #e3505c;
+      font-size: 12px;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    /* "от" */
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(1) {
+      font-size: 10px;
+      color: #7e7e7e;
+    }
+
+    /* число */
+    .os-top-countries-image .os-top-countries-item .os-country-price span:nth-child(2) {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(2) {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      color: #0799ff;
+    }
+
+    /* "$/чел." */
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(3) {
+      font-size: 14px;
+      line-height: 26px;
+      color: #0799ff;
+      font-weight: 100;
+    }
+
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(2) {
+      padding-left: 6px;
+    }
+
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(2),
+    .os-top-countries-text .os-top-countries-item .os-country-price span:nth-child(3) {
+      background-color: #fff;
+      line-height: 26px;
+    }
+
+    @media screen and (min-width: 846px) {
+      .os-top-countries {
+        padding: 40px 17px 0;
+      }
+    }
+
+    .os-top-countries-item.small .os-country-price span:nth-child(1) {
+      top: -2px;
+    }
+
+    .os-top-countries-text .os-top-countries-item.small .os-country-price span:nth-child(2) {
+      position: relative;
+      top: -4px;
+      padding-left: 15px;
+      font-size: 16px;
+    }
+
+    .os-top-countries-text .os-top-countries-item.small .os-country-price span:nth-child(3) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      line-height: 12px;
+      font-size: 12px;
+      background-color: transparent;
+    }
+  </style>
+
+  <script
+    src="https://export.otpusk.com/js/top?k=2ea96-14dc1-928a6-c7625-2cb1e&t=image&c=20&u=https://travel-me.agency/populars&l=ru"></script>
+
+</section>
+<%= render 'components/footer' %>
