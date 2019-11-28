@@ -7,8 +7,16 @@
 	text-transform: uppercase !important;
 }
 
-.new_f-form-submit {
+.new_f-form-submit, .new_t-order-btn, .new_r-item-price, .new_r-currency-switch label input:checked + span {
 	background-color: #e3505c !important;
+}
+
+.new_r-filter-value {
+	color: #e3505c !important;
+}
+
+.new_r-item:hover, .new_r-item-body:hover {
+	border-color: #e3505c #e3505c #e3505c transparent !important;
 }
 
 .island {
