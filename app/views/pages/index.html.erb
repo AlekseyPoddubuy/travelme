@@ -10,24 +10,27 @@
 			</h1>
 		</div>
 		<script>
-			var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
+			var osGeo = 'Египет'; /* Страна, курорт или отель по умолчанию в форме поиска */
 			var osDefaultDeparture = ''; /* ID города или название на языке модуля */
-			var osDefaultDuration = ''; /* Начальная длительность в днях */
+			var osDefaultDuration = '7'; /* Начальная длительность в днях */
 			var osTarget = ''; /* URL для отправки формы */
-			var osContainer = '.results'; /* Элемент DIV, в котором выводить результаты поиска */
+			var osContainer = ".results"; /* Элемент DIV, в котором выводить результаты поиска */
 			var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
 			var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
 			var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
 			var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
-			var osCurrency = 'converted'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
-		</script>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
-		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
-		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
-		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
-		<script src="https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e"></script>
-		<script src="https://export.otpusk.com/js/onsite/"></script>
-		<script src="https://export.otpusk.com/js/order"></script>
+			var osCurrency = 'original'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
+	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
+	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
+	<script src="https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e"></script>
+	<script src="https://export.otpusk.com/js/onsite/"></script>
+	<script src="https://export.otpusk.com/js/order"></script>
+							
+
+
 	</div>
 </div>
 	<div class="container">
