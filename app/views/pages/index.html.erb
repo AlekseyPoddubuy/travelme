@@ -9,13 +9,14 @@
 				</span>
 			</h1>
 		</div>
+
 		<script>
-			var osGeo = 'Египет'; /* Страна, курорт или отель по умолчанию в форме поиска */
+			var osGeo = ''; /* Страна, курорт или отель по умолчанию в форме поиска */
 			var osDefaultDeparture = ''; /* ID города или название на языке модуля */
-			var osDefaultDuration = '7'; /* Начальная длительность в днях */
+			var osDefaultDuration = ''; /* Начальная длительность в днях */
 			var osTarget = ''; /* URL для отправки формы */
-			var osContainer = ".results"; /* Элемент DIV, в котором выводить результаты поиска */
-			var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+			var osContainer = '.results'; /* Элемент DIV, в котором выводить результаты поиска */
+			var osTourContainer = '.results'; /* Элемент DIV, в котором выводить подробную информацию о туре */
 			var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
 			var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
 			var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
@@ -29,7 +30,6 @@
 	<script src="https://export.otpusk.com/js/onsite/"></script>
 	<script src="https://export.otpusk.com/js/order"></script>
 							
-
 
 	</div>
 </div>
