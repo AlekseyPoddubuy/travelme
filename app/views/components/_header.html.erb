@@ -3,10 +3,10 @@
 		<div class="row">
 			<div class="col-lg-2 col-sm-3 col-md-12 col-4">
 				<div class="logo">
-					<%= link_to (image_tag 'logo2.png'), index_path %>
+					<%= link_to (image_tag 'logo2.png', class: "logo__img"), index_path %>
 				</div>
 			</div>
-			<div class="col-lg-10 col-sm-9 col-md-12 col-6">
+			<div class="col-lg-10 col-md-12 d-none d-sm-block">
 				<nav class="menu">
 					<span class="menu__call">Колл-центр:</span>
 					<a class="menu__phone" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
@@ -31,10 +31,33 @@
 					</ul>
 				</nav>
 			</div>
+			<div class="col-md-12 col-6 d-lg-none d-md-none">
+				<div class="mob-contacts">
+					<a class="mob-contacts__phone" href="tel:+380443346319">
+						<span class="text--black">
+							UA
+						</span> +38044‎3346319
+					</a>
+					<a class="mob-contacts__phone" href="tel:+442080896595">
+						<span class="text--black">
+							EU
+						</span>
+						+442080896595
+					</a>
+					<a class="mob-contacts__phone" href="tel:+74951282039">
+						<span class="text--black">
+							RU
+						</span>
+						+74951282039
+					</a>
+				</div>
+			</div>
 			<div class="col-md-12 col-2 d-lg-none d-md-none">
-				<p class="hamburger js-toggle-menu">
-					Меню
-				</p>
+				<ul class="mobile-nav__ul">
+					<li class="mobile-nav__li">
+						<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
+					</li>
+				</ul>
 			</div>
 			<div class="col-md-12 col-12">
 				<nav class="mobile-nav-wrap" role="navigation">

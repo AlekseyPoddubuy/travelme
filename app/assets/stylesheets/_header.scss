@@ -1,88 +1,92 @@
 .menu {
-	text-align: right;
-	margin-top: 10px;
+  text-align: right;
+  margin-top: 10px;
 }
 
 .menu__call {
-	font-size: 18px;
-	color: #FFF;
-	font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .menu__phone {
-	font-size: 18px;
-	color: #fff;
+  font-size: 18px;
+  color: #fff;
 
-	&:hover {
-		color: gold;
-		text-decoration: none;
-	}
+  &:hover {
+    color: gold;
+    text-decoration: none;
+  }
+}
+
+.mob-contacts__phone {
+  display: none;
+  font-weight: 700;
+  color: #e3505c;
 }
 
 .menu__link {
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
 
-	&:hover {
-		text-decoration: none;
-		color: #000;
-		border-bottom: 3px solid red;
-		padding-bottom: 12px;
-	}
+  &:hover {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 3px solid red;
+    padding-bottom: 12px;
+  }
 }
 
 .menu__ul {
-	margin-top: 13px;
+  margin-top: 13px;
 }
 
 .menu__li {
-	display: inline-block;
-	margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
-
 
 .switch {
-	text-align: center;
-	margin-top: 8px;
+  text-align: center;
+  margin-top: 8px;
 
-	a {
-		color: #fff;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-size: 14px;
-	}
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
 
-	ul {
-		margin-bottom: 0;
-	}
+  ul {
+    margin-bottom: 0;
+  }
 }
 
-
 .mobile-header-nav {
-	display: none;
-	background-color: rgba(255, 255, 255, 0.71);
-	border-radius: 7px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.71);
+  border-radius: 7px;
 }
 
 .mobile-header__li {
-	text-align: center;
-	color: #000000;
-	padding: 10px 0;
-	text-transform: uppercase;
-	font-size: 14px;
+  text-align: center;
+  color: #000000;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .mobile-header__link:hover {
-	color: #fe3e55;
-	text-decoration: none;
+  color: #fe3e55;
+  text-decoration: none;
 }
 
 .hamburger {
-	text-align: right;
-	color: #FFF;
-	font-weight: 700;
-	text-transform: uppercase;
-	cursor: pointer;
+  text-align: right;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
 }
