@@ -55,7 +55,10 @@
 			<div class="col-md-12 col-sm-2 col-2 d-lg-none d-md-none">
 				<ul class="mobile-nav__ul">
 					<li class="mobile-nav__li">
-						<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
+						<picture>
+							<source media="(min-width: 465px)" srcset="<%= image_url 'more-icon-big.png' %>">
+							<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
+						</picture>
 					</li>
 				</ul>
 			</div>
