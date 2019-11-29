@@ -19,11 +19,11 @@
   .menu__ul {
     display: none;
   }
-  
+
   .menu__phone {
     display: none !important;
-  } 
-   
+  }
+
   .menu__call {
     display: none;
   }
@@ -31,14 +31,29 @@
     margin-top: 0 !important;
     text-align: left !important;
   }
+
+  .mob-contacts {
+    margin-top: 18px;
+  }
+
+  .hamburger {
+    margin-top: 18px;
+  }
+
+  .mob-contacts__phone {
+    display: inline-block !important;
+  }
+
+  .island {
+    background-image: none !important;
+  }
+  .island__h1 {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .island {
-    background-image: none !important;
-  }
-
   .hamburger {
     margin-top: 15px;
   }
@@ -54,7 +69,6 @@
   .offset--top {
     padding-top: 50px !important;
   }
-
 
   .mobile-nav__ul {
     text-align: right;
@@ -73,6 +87,6 @@
   }
 
   .mobile-header-nav {
-    padding: 10px 0
+    padding: 10px 0;
   }
 }

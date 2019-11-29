@@ -1,12 +1,12 @@
 <header class="header-trans">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-2 col-sm-3 col-md-12 col-4">
+			<div class="col-lg-2 col-sm-4 col-md-12 col-4">
 				<div class="logo">
 					<%= link_to (image_tag 'logo2.png', class: "logo__img"), index_path %>
 				</div>
 			</div>
-			<div class="col-lg-10 col-md-12 d-none d-sm-block">
+			<div class="col-lg-10 col-md-12 d-none d-md-none d-lg-block">
 				<nav class="menu">
 					<span class="menu__call">Колл-центр:</span>
 					<a class="menu__phone" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
@@ -31,7 +31,7 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="col-md-12 col-6 d-lg-none d-md-none">
+			<div class="col-md-12 col-sm-6 col-6 d-lg-none d-md-none">
 				<div class="mob-contacts">
 					<a class="mob-contacts__phone" href="tel:+380443346319">
 						<span class="text--black">
@@ -52,7 +52,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-12 col-2 d-lg-none d-md-none">
+			<div class="col-md-12 col-sm-2 col-2 d-lg-none d-md-none">
 				<ul class="mobile-nav__ul">
 					<li class="mobile-nav__li">
 						<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
