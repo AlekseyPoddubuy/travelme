@@ -64,6 +64,7 @@
   }
   .mob-contacts__phone {
     display: inline-block !important;
+    font-size: 14px;
   }
 
   .offset--top {
@@ -88,5 +89,12 @@
 
   .mobile-header-nav {
     padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .mob-contacts__phone {
+    font-size: 11px !important;
+    margin-left: 16px;
   }
 }
