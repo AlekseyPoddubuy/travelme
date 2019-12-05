@@ -12,6 +12,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1.json
   def show
     @cities = City.where(contact_id: [@contact])
+    @contacts = Contact.all
   end
 
   # GET /contacts/new
