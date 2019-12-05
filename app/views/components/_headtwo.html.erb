@@ -1,36 +1,87 @@
-<header class="header-two">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2">
-				<div class="logo">
-					<%= link_to (image_tag 'logo2.png'), index_path %>
+<header class="header-trans">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-sm-4 col-md-12 col-4">
+					<div class="logo">
+						<%= link_to (image_tag 'logo2.png', class: "logo__img"), index_path %>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-10">
-				<nav class="menu-two">
-					<span class="menu-two__call">Колл-центр:</span>
-					<a class="menu-two__phone" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
-					<a class="menu-two__phone" href="tel:+442080896595">+442 080 896 595 /</a>
-					<a class="menu-two__phone" href="tel:+74951282039">+7 495 128 20 39</a>
-					<ul class="menu-two__ul">
-						<li class="menu-two__li">
-							<%= link_to "Подобрать тур", root_path + '#search', class: 'menu-two__link' %>
-						</li>
-						<li class="menu-two__li">
-							<%= link_to "Горящие туры", root_path + '#hot', class: 'menu-two__link' %>
-						</li>
-						<li class="menu-two__li">
-							<%= link_to "Популярные туры", populars_path, class: 'menu-two__link' %>
-						</li>
-						<li class="menu-two__li">
-							<%= link_to "Франчайзинг", franchise_path, class: 'menu-two__link' %>
-						</li>
-						<li class="menu__li">
-							<%= link_to "Точки продаж", contacts_path, class: 'menu-two__link' %>
+				<div class="col-lg-10 col-md-12 d-none d-md-none d-lg-block">
+					<nav class="menu">
+						<span class="menu__call pink--text">Колл-центр:</span>
+						<a class="menu__phone pink--text" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
+						<a class="menu__phone pink--text" href="tel:+442080896595">+442 080 896 595 /</a>
+						<a class="menu__phone pink--text" href="tel:+74951282039">+7 495 128 20 39</a>
+						<span class="menu__call pink--text">Email:</span>
+						<a class="menu__phone pink--text" href="mailto:info@travel-me.agency">info@travel-me.agency</a>
+						<ul class="menu__ul">
+							<li class="menu__li">
+								<%= link_to "Подобрать тур", root_path + '#search', class: 'menu__link pink--text' %>
+							</li>
+							<li class="menu__li">
+								<%= link_to "Горящие туры", root_path + '#hot', class: 'menu__link pink--text' %>
+							</li>
+							<li class="menu__li">
+								<%= link_to "Популярные туры", populars_path, class: 'menu__link pink--text' %>
+							</li>
+							<li class="menu__li">
+								<%= link_to "Франчайзинг", franchise_path, class: 'menu__link pink--text' %>
+							</li>
+							<li class="menu__li">
+								<%= link_to "Точки продаж", contacts_path, class: 'menu__link pink--text' %>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-12 col-sm-6 col-6 d-lg-none d-md-none">
+					<div class="mob-contacts">
+						<a class="mob-contacts__phone" href="tel:+380443346319">
+							<span class="text--black">
+								UA
+							</span> +38044‎3346319
+						</a>
+						<a class="mob-contacts__phone" href="tel:+442080896595">
+							<span class="text--black">
+								EU
+							</span>
+							+442080896595
+						</a>
+						<a class="mob-contacts__phone" href="tel:+74951282039">
+							<span class="text--black">
+								RU
+							</span>
+							+74951282039
+						</a>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-2 col-2 d-lg-none d-md-none">
+					<ul class="mobile-nav__ul">
+						<li class="mobile-nav__li">
+							<picture>
+								<source media="(min-width: 465px)" srcset="<%= image_url 'more-icon-big.png' %>">
+								<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
+							</picture>
 						</li>
 					</ul>
-				</nav>
+				</div>
+				<div class="col-md-12 col-12">
+					<nav class="mobile-nav-wrap" role="navigation">
+						<ul class="mobile-header-nav">
+							<li class="mobile-header__li">
+								<%= link_to "Подобрать тур", root_path + '#search', class: 'mobile-header__link' %>
+							</li>
+							<li class="mobile-header__li">
+								<%= link_to "Горящие туры", root_path + '#hot', class: 'mobile-header__link' %>
+							</li>
+							<li class="mobile-header__li">
+								<%= link_to "Франчайзинг", franchise_path, class: 'mobile-header__link' %>
+							</li>
+							<li class="mobile-header__li">
+								<%= link_to "Точки продаж", contacts_path, class: 'mobile-header__link' %>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
+	</header>

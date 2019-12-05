@@ -1,3 +1,16 @@
+<!-- <div class="mob-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-6">
+				<a class="mob-top__mail pink--text" href="mailto:info@travel-me.agency">info@travel-me.agency</a>
+			</div>
+			<div class="col-lg-6 col-6 text--right">
+
+			</div>
+		</div>
+	</div>
+</div> -->
+
 <div class="island">
 	<%= render "components/header" %>
 	<div class="container">
@@ -21,20 +34,20 @@
 			var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
 			var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
 			var osCurrency = 'original'; /* Валюта для вывода туров: converted – гривна, original – в валюте тура $ или € */
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
-	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
-	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
-	<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
-	<script src="https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e"></script>
-	<script src="https://export.otpusk.com/js/onsite/"></script>
-	<script src="https://export.otpusk.com/js/order"></script>
-							
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
+		<link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
+		<script src="https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e"></script>
+		<script src="https://export.otpusk.com/js/onsite/"></script>
+		<script src="https://export.otpusk.com/js/order"></script>
+
 
 	</div>
 </div>
-	<div class="container">
-			<div class="results"></div>
+<div class="container">
+	<div class="results"></div>
 </div>
 <%= render 'components/hot' %>
 <%= render 'components/footer'%>
@@ -43,8 +56,7 @@
 <title>Сеть туристических агентств Travel Me Agency</title>
 <meta name="description" content="Travel Me Agency">
 <meta name="keywords" content="туристическое агентство, купить тур">
-<meta property="og:image"
-	content="<%= image_url 'og.jpg' %>" />
+<meta property="og:image" content="<%= image_url 'og.jpg' %>" />
 <link rel="canonical" href="<%= request.url %>" itemprop="url">
 <meta property="og:site_name" content="travel-me.agency | TRAVEL ME AGENCY">
 <meta property="og:url" content="https://travel-me.agency/">
@@ -55,8 +67,8 @@
 
 <script>
 
-$(".new_f-form-submit").click(function(){
-  $(".results").css("padding", "40px 0");
-});
+	$(".new_f-form-submit").click(function () {
+		$(".results").css("padding", "40px 0");
+	});
 
 </script>

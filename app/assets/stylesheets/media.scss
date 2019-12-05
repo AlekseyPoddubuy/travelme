@@ -60,7 +60,7 @@
 
   .mob-contacts {
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 24px;
   }
   .mob-contacts__phone {
     display: inline-block !important;
@@ -72,7 +72,7 @@
   }
 
   .mobile-nav__ul {
-    text-align: right;
+    text-align: center;
     margin-top: 5px;
   }
 
@@ -90,11 +90,19 @@
   .mobile-header-nav {
     padding: 10px 0;
   }
+  .mob-top__mail {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .mob-top__icon {
+    width: 18px;
+  }
 }
 
 @media only screen and (max-width: 370px) {
   .mob-contacts__phone {
     font-size: 11px !important;
-    margin-left: 16px;
+    margin-left: 19px;
   }
 }
