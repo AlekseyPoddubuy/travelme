@@ -34,10 +34,20 @@
 
   .mob-contacts {
     margin-top: 18px;
+    margin-left: 35px;
+  }
+
+  .mobile-nav__ul {
+    text-align: center;
+    margin-top: 10px;
   }
 
   .hamburger {
-    margin-top: 18px;
+    max-width: 40px;
+  }
+
+  .mob-top__icon {
+    width: 22px;
   }
 
   .mob-contacts__phone {
@@ -56,6 +66,7 @@
 @media only screen and (max-width: 480px) {
   .hamburger {
     margin-top: 15px;
+    max-width: 40px;
   }
 
   .mob-contacts {
