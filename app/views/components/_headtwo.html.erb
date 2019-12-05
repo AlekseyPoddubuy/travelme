@@ -55,12 +55,27 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-sm-2 col-2 d-lg-none d-md-none">
+	
+					<ul class="test__ul">
+						<li class="test__li">
+							<a href="mailto:info@travel-me.agency">
+								<%= image_tag "mail.png", class: "mob-top__icon" %>
+							</a>
+						</li>
+						<li class="test__li">
+							<a href="https://www.instagram.com/travel_me_agency/">
+								<%= image_tag "instagram.png", class: "mob-top__icon" %>
+							</a>
+						</li>
+						<li class="test__li">
+							<%= image_tag "facebook.png", class: "mob-top__icon" %>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-12 d-lg-none d-md-none">
 					<ul class="mobile-nav__ul">
 						<li class="mobile-nav__li">
-							<picture>
-								<source media="(min-width: 465px)" srcset="<%= image_url 'more-icon-big.png' %>">
-								<%= image_tag "menu-icon-opt.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
-							</picture>
+							<%= image_tag "more-icon-big.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>
 						</li>
 					</ul>
 				</div>
