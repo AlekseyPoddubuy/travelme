@@ -1,6 +1,7 @@
 @import "bootstrap/dist/css/bootstrap-grid.min";
 @import "normalize";
 @import "modificators";
+@import "header";
 
 img {
   width: 100%;
@@ -340,5 +341,138 @@ body {
 
   .contacts__desc {
     margin-top: 10px;
+  }
+}
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .menu {
+    text-align: center !important;
+  }
+  .world {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  
+  .banner {
+    background-image: none !important;
+    text-align: left !important;
+    padding: 15px 0;
+  }
+  
+  .logo__img {
+    margin-top: 0 !important;
+  }
+
+  .menu__ul {
+    display: none;
+  }
+
+  .menu__phone {
+    display: none !important;
+  }
+
+  .menu__call {
+    display: none;
+  }
+  .menu {
+    margin-top: 0 !important;
+    text-align: left !important;
+  }
+
+  .mob-contacts {
+    margin-top: 18px;
+    margin-left: 35px;
+  }
+
+  .mobile-nav__ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    max-width: 40px;
+  }
+
+  .mob-top__icon {
+    width: 22px;
+  }
+
+  .mob-contacts__phone {
+    display: inline-block !important;
+  }
+
+  .island {
+    background-image: none !important;
+  }
+  .island__h1 {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    margin-top: 15px;
+    max-width: 40px;
+  }
+
+  .mob-contacts {
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .mob-contacts__phone {
+    display: inline-block !important;
+    font-size: 14px;
+  }
+
+  .offset--top {
+    padding-top: 50px !important;
+  }
+
+  .mobile-nav__ul {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .mobile-nav__li {
+    display: inline-block;
+  }
+
+  .island__h1 {
+    display: none;
+  }
+  .logo__img {
+    width: 125px !important;
+  }
+
+  .mobile-header-nav {
+    padding: 10px 0;
+  }
+  .mob-top__mail {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .mob-top__icon {
+    width: 18px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .mob-contacts__phone {
+    font-size: 11px !important;
+    margin-left: 19px;
   }
 }
