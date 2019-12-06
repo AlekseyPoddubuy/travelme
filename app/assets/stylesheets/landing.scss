@@ -89,6 +89,7 @@ body {
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .banner-triggers__h2 {
@@ -97,6 +98,7 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .banner-triggers__h3 {
@@ -418,6 +420,14 @@ body {
   }
   .island__h1 {
     display: none;
+  }
+
+  .banner-triggers__h1 {
+    font-size: 30px !important;
+  }
+
+  .banner-triggers__h2 {
+    font-size: 19px;
   }
 }
 

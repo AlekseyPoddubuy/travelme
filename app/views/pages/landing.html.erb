@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 col-sm-6 col-4 d-lg-none d-md-none">
+      <div class="col-md-12 col-sm-4 col-4 d-lg-none d-md-none">
         <div class="logo">
           <%= link_to (image_tag 'logo2.png', class: "logo__img"), index_path %>
         </div>
@@ -94,16 +94,19 @@
         <nav class="mobile-nav-wrap" role="navigation">
           <ul class="mobile-header-nav">
             <li class="mobile-header__li">
-              <%= link_to "Подобрать тур", root_path + '#search', class: 'mobile-header__link' %>
+              <%= link_to "Главная", root_path + '#search', class: 'mobile-header__link' %>
             </li>
             <li class="mobile-header__li">
-              <%= link_to "Горящие туры", root_path + '#hot', class: 'mobile-header__link' %>
+              <%= link_to "Направления", '#ways', class: 'mobile-header__link' %>
             </li>
             <li class="mobile-header__li">
-              <%= link_to "Франчайзинг", franchise_path, class: 'mobile-header__link' %>
+              <%= link_to "Франшиза", "#get", class: 'mobile-header__link' %>
             </li>
             <li class="mobile-header__li">
-              <%= link_to "Точки продаж", contacts_path, class: 'mobile-header__link' %>
+              <%= link_to "Для кого", "#for", class: 'mobile-header__link' %>
+            </li>
+            <li class="mobile-header__li">
+              <%= link_to "Стать партнером", "#partner", class: 'mobile-header__link' %>
             </li>
           </ul>
         </nav>
@@ -559,5 +562,15 @@
       );
     }
     return false;
+  });
+</script>
+
+
+<script>
+  // open mobile menu
+  $('.js-toggle-menu').click(function (e) {
+    e.preventDefault();
+    $('.mobile-header-nav').slideToggle();
+    $(this).toggleClass('open');
   });
 </script>
