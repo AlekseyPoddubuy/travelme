@@ -1,8 +1,44 @@
-<footer>
+<footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<p>Международная сеть туристических агентств Travel-me.agency. Все права защищены. © 2019</p>
+			<div class="col-lg-2 col-sm-4 col-md-12 col-4">
+				<div class="logo">
+					<%= link_to (image_tag 'logo2.png', class: "logo__img"), index_path %>
+				</div>
+			</div>
+			<div class="col-lg-2 border--left">
+				<ul class="logo-desc__ul">
+					<li class="logo-desc__li">
+						Международная сеть
+					</li>
+					<li class="logo-desc__li">
+						туристических
+					</li>
+					<li class="logo-desc__li">
+						агенств
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-8">
+				<div class="footer-desc">
+					<span class="menu__span text--black text--bold">UA:</span>
+					<a class="menu__phone text--bold pink--text" href="tel:+380443346319">+38044‎3346319</a>
+					<span class="menu__span text--black text--bold">EU:</span>
+					<a class="menu__phone text--bold pink--text" href="tel:+442080896595">+442080896595</a>
+					<a class="menu__mail" href="mailto:">
+						<%= image_tag "mail-opt.png", class: "menu__img" %>
+					</a>
+					<a class="menu__mail" href="mailto:">
+						<%= image_tag "instagram-opt.png", class: "menu__instagram" %>
+					</a>
+					<a class="menu__mail" href="mailto:">
+						<%= image_tag "facebook-opt.png", class: "menu__facebook" %>
+					</a>
+					<p class="footer-info__p">
+						&#169 2018 - <%= Time.current.year %>
+						Сеть туристических агентств Travel Me Agency
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

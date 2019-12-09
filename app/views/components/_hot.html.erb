@@ -2,187 +2,255 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="hot-trigger">
-					<h1>Горящие туры специально для Вас</h1>
-					<h2>время отдыхать</h2>
-				</div>
+				<h1 class="hot__h1"> <span class="pink--text">
+						Горящие туры
+					</span>
+					специально для Вас
+				</h1>
 			</div>
 			<div class="col-lg-12">
-					<style>
-							/*==== Стилизация для модуля горящих туров с типом "плитки" ====*/
-							
-							/* Отступы для контейнера, содержащего все блоки */
-							body .hot-block_tiles .hot-wrapper {
-									margin-top: 0px; /*отступ сверху*/
-									margin-left: 0px; /*отступ слева*/
-									margin-bottom: 0px; /*отступ снизу*/
-									margin-right: -10px !important; /*Внимание!!! должно совпадать с положительным margin-right в .hot-otp-form-wrap ниже*/
-							}
-							
-							/* Отступы между блоками */
-							body .hot-block_tiles .hot-otp-form-wrap {
-									margin-top: 10px; /*отступ сверху*/
-									margin-right: 10px; /*отступ справа. Внимание!!! должно совпадать с отрицательным значением margin-right в .hot-wrapper выше*/
-							}
-							
-							/* Ширина основного блока */
-							body .hot-block_tiles .hot-otp-img,
-							body .hot-block_tiles .hot-otp-tour-block {
-									width: 360px !important; /*(в пределах от 240 до 360 пикселей)*/
-							}
-							
-							/* Градиент основного блока */
-							body .hot-block_tiles .hot-otp-tour-block {
-									background: -moz-linear-gradient(-10deg, rgba(32,32,32,0.75) 0%, rgba(32,32,32,0) 50%), -moz-linear-gradient(10deg, rgba(32,32,32,0.75) 0%, rgba(32,32,32,0) 50%);
-									background: -webkit-linear-gradient(-10deg, rgba(32,32,32,0.75) 0%,rgba(32,32,32,0) 50%), -webkit-linear-gradient(10deg, rgba(32,32,32,0.75) 0%,rgba(32,32,32,0) 50%);
-									background: linear-gradient(170deg, rgba(32,32,32,0.75) 0%,rgba(32,32,32,0) 50%), linear-gradient(10deg, rgba(32,32,32,0.75) 0%,rgba(32,32,32,0) 50%);
-							}
-							
-							/* Скругление углов основного блока */
-							body .hot-block_tiles .hot-otp-form-wrap {
-									border-radius: 4px;
-							}
-							
-							/* Плашка под нижний текст */
-							body .hot-block_tiles .hot-otp-img:after {
-									background: rgba(255,0,0,.7); /*фон плашки (цвет, градиент, картинка)*/
-									height: 0; /*высота плашки, например: height: 73px;*/
-							}
-							
-							/* Значение прозрачности фоновой картинки основного блока при наведении */
-							body .hot-block_tiles .hot-otp-form-wrap:hover .hot-otp-img {
-									opacity: .8;
-							}
-							
-							/*=== Стилизация частей основного блока ===*/
-							
-							/*== 1. Заголовок блока (верхяя строка, большие буквы) ==*/
-							body .hot-block_tiles .hot-otp-description {
-									font-family: arial; /*семейство шрифта*/
-									font-size: 18px; /*размер шрифта*/
-									line-height: 21px; /*высота линии*/
-									font-weight: bold; /*жирный шрифт, для обычного font-weight: normal;*/
-									font-style: normal; /*без курсива, для курсива font-style: italic;*/
-									color: #fff !important; /*цвет*/
-									padding-top: 18px; /*отступ сверху*/
-									padding-left: 20px; /*отступ слева*/
-									padding-right: 20px;  /*отступ справа*/
-							}
-							/* При наведении мышки на основной блок */
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-description {
-									text-decoration: none !important; /*подчеркивания нет, чтобы было text-decoration: underline*/
-									color: #fff !important; /*цвет*/
-							}
-							
-							/*== 2. Строка под заголовком (буквы поменьше) ==*/
-							body .hot-block_tiles .hot-otp-place {
-									font-family: arial; /*семейство шрифта*/
-									font-size: 13px; /*размер шрифта*/
-									line-height: 15px; /*высота линии*/
-									font-weight: bold; /*жирный шрифт, для обычного font-weight: normal;*/
-									font-style: normal !important; /*без курсива, для курсива font-style: italic*/
-									color: #fff !important; /*цвет*/
-									padding-top: 0; /*отступ сверху*/
-									padding-left: 20px; /*отступ слева*/
-									padding-right: 20px;  /*отступ справа*/
-							}
-							/* При наведении мышки на основной блок */
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-place {
-									text-decoration: none !important; /*подчеркивания нет, чтобы было text-decoration: underline*/
-									color: #fff !important; /*цвет*/
-							}
-							
-							/*== 3. Строка с описанием тура в нижнем левом углу (курсив) ==*/
-							body .hot-block_tiles .hot-otp-tour-info {
-									font-family: arial; /*семейство шрифта*/
-									font-size: 13px; /*размер шрифта*/
-									line-height: 16px; /*высота линии*/
-									font-weight: normal; /*обычный шрифт, для жирного font-weight: bold;*/
-									font-style: italic; /*с курсивом, если без курсива font-style: normal;*/
-									color: #fff; /*цвет*/
-									left: 20px; /*отступ слева*/
-									bottom: 13px; /*отступ снизу*/
-									width: 130px; /*ширина блока*/
-							}
-							/* При наведении мышки на основной блок */
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-tour-info {
-									text-decoration: none !important; /*подчеркивания нет, чтобы было text-decoration: underline*/
-									color: #fff !important; /*цвет*/
-							}
-							
-							/*== 4. Блок с ценой тура в нижнем правом углу (описание + цена) ==*/
-							body .hot-block_tiles .hot-price-block {
-									padding-right: 20px; /*отступ справа*/
-									padding-bottom: 11px; /*отступ снизу*/
-							}
-							
-							/*== 4.1. Блок с ценой тура в нижнем правом углу (описание) ==*/
-							body .hot-block_tiles .hot-otp-price-count,
-							body .hot-block_tiles .hot-otp-price-count nobr {
-									font-family: arial; /*семейство шрифта*/
-									font-size: 11px; /*размер шрифта*/
-									line-height: 10px; /*высота линии*/
-									font-weight: normal; /*обычный шрифт, для жирного font-weight: bold;*/
-									font-style: normal; /*без курсива, для курсива font-style: italic;*/
-									color: #fff !important; /*цвет*/
-							}
-							body .hot-block_tiles .hot-otp-price-count {
-									width: 60px; /*ширина блока*/
-							}
-							/* При наведении мышки на основной блок */
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price-count,
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price-count nobr {
-									text-decoration: none !important; /*подчеркивания нет, чтобы было text-decoration: underline*/
-									color: #fff !important; /*цвет*/
-							}
-							
-							/*== 4.2. Блок с ценой тура в нижнем правом углу (цена) ==*/
-							body .hot-block_tiles .hot-otp-price a {
-									font-family: arial; /*семейство шрифта*/
-									font-size: 24px; /*размер шрифта*/
-									line-height: 28px; /*высота линии*/
-									font-weight: bold; /*жирный шрифт, для обычного font-weight: normal;*/
-									font-style: normal; /*без курсива, для курсива font-style: italic;*/
-									color: #fff !important; /*цвет*/
-							}
-							/* При наведении мышки на основной блок */
-							body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price a {
-									text-decoration: none !important; /*подчеркивания нет, чтобы было text-decoration: underline*/
-									color: #fff !important; /*цвет*/
-							}
-							
-							</style><div class="hot-size-checker" id="otpusk_onsite_hot23027">
-									<img src="https://export.otpusk.com/os/ajax-loader.gif"/><span></span>
-							</div>
-							<script>
-							
-									var osTarget23027 = "https://www.travel-me.agency/"; /* URL расположения модуля поиска */
-									var osLang = "ru"; /* язык интерфейса (ru|ua) */
-									var osCurrency = "converted"; /* валюта в турах: original для гривны, converted для долларов или евро */
-							
-									(function (d, s) {
-											function delayedLoad23027() {
-													var js, fjs = d.getElementsByTagName(s)[0];
-													js = d.createElement(s);
-													js.id = "OShotApi23027";
-													js.src = "https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e";
-													fjs.parentNode.insertBefore(js, fjs);
-													js.onload = function () {
-															js = d.createElement(s);
-															js.id = "OShotGetData23027";
-															js.src = "https://export.otpusk.com/js/view?id=23027";
-															fjs.parentNode.insertBefore(js, fjs);
-													};
-											}
-											if (window.addEventListener) {
-													window.addEventListener("load", delayedLoad23027, false);
-											} else if (window.attachEvent) {
-													window.attachEvent("onload", delayedLoad23027);
-											}
-									}(document, "script"));
-							</script>
-							
-					<a href="https://www.otpusk.com/search/turkey/">Горящие туры в Турцию</a> из Киева и других городов
+				<style>
+					/*==== Стилизация для модуля горящих туров с типом "плитки" ====*/
+
+					/* Отступы для контейнера, содержащего все блоки */
+					body .hot-block_tiles .hot-wrapper {
+						margin-top: 0px;
+						/*отступ сверху*/
+						margin-left: 0px;
+						/*отступ слева*/
+						margin-bottom: 0px;
+						/*отступ снизу*/
+						margin-right: -10px !important;
+						/*Внимание!!! должно совпадать с положительным margin-right в .hot-otp-form-wrap ниже*/
+					}
+
+					/* Отступы между блоками */
+					body .hot-block_tiles .hot-otp-form-wrap {
+						margin-top: 10px;
+						/*отступ сверху*/
+						margin-right: 10px;
+						/*отступ справа. Внимание!!! должно совпадать с отрицательным значением margin-right в .hot-wrapper выше*/
+					}
+
+					/* Ширина основного блока */
+					body .hot-block_tiles .hot-otp-img,
+					body .hot-block_tiles .hot-otp-tour-block {
+						width: 360px !important;
+						/*(в пределах от 240 до 360 пикселей)*/
+					}
+
+					/* Градиент основного блока */
+					body .hot-block_tiles .hot-otp-tour-block {
+						background: -moz-linear-gradient(-10deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%), -moz-linear-gradient(10deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%);
+						background: -webkit-linear-gradient(-10deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%), -webkit-linear-gradient(10deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%);
+						background: linear-gradient(170deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%), linear-gradient(10deg, rgba(32, 32, 32, 0.75) 0%, rgba(32, 32, 32, 0) 50%);
+					}
+
+					/* Скругление углов основного блока */
+					body .hot-block_tiles .hot-otp-form-wrap {
+						border-radius: 4px;
+					}
+
+					/* Плашка под нижний текст */
+					body .hot-block_tiles .hot-otp-img:after {
+						background: rgba(255, 0, 0, .7);
+						/*фон плашки (цвет, градиент, картинка)*/
+						height: 0;
+						/*высота плашки, например: height: 73px;*/
+					}
+
+					/* Значение прозрачности фоновой картинки основного блока при наведении */
+					body .hot-block_tiles .hot-otp-form-wrap:hover .hot-otp-img {
+						opacity: .8;
+					}
+
+					/*=== Стилизация частей основного блока ===*/
+
+					/*== 1. Заголовок блока (верхяя строка, большие буквы) ==*/
+					body .hot-block_tiles .hot-otp-description {
+						font-family: arial;
+						/*семейство шрифта*/
+						font-size: 18px;
+						/*размер шрифта*/
+						line-height: 21px;
+						/*высота линии*/
+						font-weight: bold;
+						/*жирный шрифт, для обычного font-weight: normal;*/
+						font-style: normal;
+						/*без курсива, для курсива font-style: italic;*/
+						color: #fff !important;
+						/*цвет*/
+						padding-top: 18px;
+						/*отступ сверху*/
+						padding-left: 20px;
+						/*отступ слева*/
+						padding-right: 20px;
+						/*отступ справа*/
+					}
+
+					/* При наведении мышки на основной блок */
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-description {
+						text-decoration: none !important;
+						/*подчеркивания нет, чтобы было text-decoration: underline*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					/*== 2. Строка под заголовком (буквы поменьше) ==*/
+					body .hot-block_tiles .hot-otp-place {
+						font-family: arial;
+						/*семейство шрифта*/
+						font-size: 13px;
+						/*размер шрифта*/
+						line-height: 15px;
+						/*высота линии*/
+						font-weight: bold;
+						/*жирный шрифт, для обычного font-weight: normal;*/
+						font-style: normal !important;
+						/*без курсива, для курсива font-style: italic*/
+						color: #fff !important;
+						/*цвет*/
+						padding-top: 0;
+						/*отступ сверху*/
+						padding-left: 20px;
+						/*отступ слева*/
+						padding-right: 20px;
+						/*отступ справа*/
+					}
+
+					/* При наведении мышки на основной блок */
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-place {
+						text-decoration: none !important;
+						/*подчеркивания нет, чтобы было text-decoration: underline*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					/*== 3. Строка с описанием тура в нижнем левом углу (курсив) ==*/
+					body .hot-block_tiles .hot-otp-tour-info {
+						font-family: arial;
+						/*семейство шрифта*/
+						font-size: 13px;
+						/*размер шрифта*/
+						line-height: 16px;
+						/*высота линии*/
+						font-weight: normal;
+						/*обычный шрифт, для жирного font-weight: bold;*/
+						font-style: italic;
+						/*с курсивом, если без курсива font-style: normal;*/
+						color: #fff;
+						/*цвет*/
+						left: 20px;
+						/*отступ слева*/
+						bottom: 13px;
+						/*отступ снизу*/
+						width: 130px;
+						/*ширина блока*/
+					}
+
+					/* При наведении мышки на основной блок */
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-tour-info {
+						text-decoration: none !important;
+						/*подчеркивания нет, чтобы было text-decoration: underline*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					/*== 4. Блок с ценой тура в нижнем правом углу (описание + цена) ==*/
+					body .hot-block_tiles .hot-price-block {
+						padding-right: 20px;
+						/*отступ справа*/
+						padding-bottom: 11px;
+						/*отступ снизу*/
+					}
+
+					/*== 4.1. Блок с ценой тура в нижнем правом углу (описание) ==*/
+					body .hot-block_tiles .hot-otp-price-count,
+					body .hot-block_tiles .hot-otp-price-count nobr {
+						font-family: arial;
+						/*семейство шрифта*/
+						font-size: 11px;
+						/*размер шрифта*/
+						line-height: 10px;
+						/*высота линии*/
+						font-weight: normal;
+						/*обычный шрифт, для жирного font-weight: bold;*/
+						font-style: normal;
+						/*без курсива, для курсива font-style: italic;*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					body .hot-block_tiles .hot-otp-price-count {
+						width: 60px;
+						/*ширина блока*/
+					}
+
+					/* При наведении мышки на основной блок */
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price-count,
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price-count nobr {
+						text-decoration: none !important;
+						/*подчеркивания нет, чтобы было text-decoration: underline*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					/*== 4.2. Блок с ценой тура в нижнем правом углу (цена) ==*/
+					body .hot-block_tiles .hot-otp-price a {
+						font-family: arial;
+						/*семейство шрифта*/
+						font-size: 24px;
+						/*размер шрифта*/
+						line-height: 28px;
+						/*высота линии*/
+						font-weight: bold;
+						/*жирный шрифт, для обычного font-weight: normal;*/
+						font-style: normal;
+						/*без курсива, для курсива font-style: italic;*/
+						color: #fff !important;
+						/*цвет*/
+					}
+
+					/* При наведении мышки на основной блок */
+					body .hot-block_tiles .hot-otp-tour-block:hover .hot-otp-price a {
+						text-decoration: none !important;
+						/*подчеркивания нет, чтобы было text-decoration: underline*/
+						color: #fff !important;
+						/*цвет*/
+					}
+				</style>
+				<div class="hot-size-checker" id="otpusk_onsite_hot23027">
+					<img src="https://export.otpusk.com/os/ajax-loader.gif" /><span></span>
+				</div>
+				<script>
+
+					var osTarget23027 = "https://www.travel-me.agency/"; /* URL расположения модуля поиска */
+					var osLang = "ru"; /* язык интерфейса (ru|ua) */
+					var osCurrency = "converted"; /* валюта в турах: original для гривны, converted для долларов или евро */
+
+					(function (d, s) {
+						function delayedLoad23027() {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							js = d.createElement(s);
+							js.id = "OShotApi23027";
+							js.src = "https://export.otpusk.com/api/session?access_token=2ea96-14dc1-928a6-c7625-2cb1e";
+							fjs.parentNode.insertBefore(js, fjs);
+							js.onload = function () {
+								js = d.createElement(s);
+								js.id = "OShotGetData23027";
+								js.src = "https://export.otpusk.com/js/view?id=23027";
+								fjs.parentNode.insertBefore(js, fjs);
+							};
+						}
+						if (window.addEventListener) {
+							window.addEventListener("load", delayedLoad23027, false);
+						} else if (window.attachEvent) {
+							window.attachEvent("onload", delayedLoad23027);
+						}
+					}(document, "script"));
+				</script>
+
+				<a href="https://www.otpusk.com/search/turkey/">Горящие туры в Турцию</a> из Киева и других городов
 			</div>
 		</div>
 	</div>

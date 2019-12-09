@@ -11,7 +11,7 @@
 	background-color: #e3505c !important;
 }
 
-.new_r-filter-value {
+.new_r-filter-value, .new_f-ext-btn-text {
 	color: #e3505c !important;
 }
 
@@ -20,9 +20,9 @@
 }
 
 .island {
-	background-image: image-url('row.jpg');
+	background-image: image-url('flamingo.png');
 	background-size: cover;
-	padding-bottom: 60px;
+	padding-bottom: 120px;
 }
 
 .island__h1 {
@@ -37,8 +37,4 @@
 	background-color: rgba(255, 255, 255, 0.7);
 	color: #e3505c;
 	padding: 10px 17px;
-}
-
-.header-trans {
-	padding: 15px 0 15px 0;
 }
