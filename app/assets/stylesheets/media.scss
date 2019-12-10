@@ -49,16 +49,20 @@
   .mob-top__icon {
     width: 22px;
   }
-
   .mob-contacts__phone {
     display: inline-block !important;
   }
-
   .island {
     background-image: none !important;
   }
   .island__h1 {
     display: none;
+  }
+  .hot--center {
+    margin: 0 100px;
+  } 
+  .footer-info__p {
+    margin: 0;
   }
 }
 
@@ -111,6 +115,9 @@
   }
   .logo--footer, .footer-desc {
     text-align: center !important;
+  }
+  .hot--center {
+    margin: 0 !important;
   }
 }
 
