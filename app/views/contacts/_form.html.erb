@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :title %>
+    <%= form.number_field :max_limit, id: :contact_title %>
+  </div>
+
+  <div class="field">
     <%= form.label :slug %>
     <%= form.text_field :slug, id: :contact_slug %>
   </div>

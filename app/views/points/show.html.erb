@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @point.title %>
+</p>
+
+<p>
+  <strong>Phoneone:</strong>
+  <%= @point.phoneone %>
+</p>
+
+<p>
+  <strong>Phonetwo:</strong>
+  <%= @point.phonetwo %>
+</p>
+
+<p>
+  <strong>Emailone:</strong>
+  <%= @point.emailone %>
+</p>
+
+<p>
+  <strong>Emailtwo:</strong>
+  <%= @point.emailtwo %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @point.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @point.address %>
+</p>
+
+<p>
+  <strong>Worktime:</strong>
+  <%= @point.worktime %>
+</p>
+
+<%= link_to 'Edit', edit_point_path(@point) %> |
+<%= link_to 'Back', points_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191101123444) do
+ActiveRecord::Schema.define(version: 20200117111004) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20191101123444) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "contact_id"
+    t.integer "max_limit"
     t.index ["slug"], name: "index_cities_on_slug", unique: true
   end
 
@@ -58,6 +59,7 @@ ActiveRecord::Schema.define(version: 20191101123444) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.integer "max_limit"
     t.index ["slug"], name: "index_contacts_on_slug", unique: true
   end
 
@@ -89,6 +91,21 @@ ActiveRecord::Schema.define(version: 20191101123444) do
     t.string "avatar_content_type"
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
+  end
+
+  create_table "points", force: :cascade do |t|
+    t.string "title"
+    t.string "phoneone"
+    t.string "phonetwo"
+    t.string "emailone"
+    t.string "emailtwo"
+    t.string "name"
+    t.string "address"
+    t.string "worktime"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "city_id"
+    t.boolean "coming_soon", default: true
   end
 
   create_table "tours", force: :cascade do |t|

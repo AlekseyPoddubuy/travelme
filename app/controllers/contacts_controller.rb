@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  before_action :authenticate_admin!, except: [:index, :show]
+  # before_action :authenticate_admin!, except: [:index, :show]
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   # GET /contacts
@@ -12,6 +12,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1.json
   def show
     @cities = City.where(contact_id: [@contact])
+    @points = Point.all
     @contacts = Contact.all
   end
 
@@ -72,6 +73,6 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:title, :phoneone, :phonetwo, :email, :adress, :slug)
+      params.require(:contact).permit(:title, :phoneone, :phonetwo, :email, :adress, :slug, :max_limit)
     end
 end

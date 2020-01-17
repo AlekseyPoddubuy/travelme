@@ -16,6 +16,7 @@
     <%= form.text_field :title, id: :city_title %>
   </div>
 
+  <%= form.number_field :max_limit %>
   <div class="field">
     <%= form.collection_select :contact_id, Contact.order(:title), :id, :title, { include_blank: "Выберите область" }, class: "form-control" %>
   </div>

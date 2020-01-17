@@ -11,6 +11,9 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
+    @contacts = Contact.all
+    @points = Point.where(city_id: [@city])
+    @cities = City.all
   end
 
   # GET /cities/new
@@ -70,6 +73,6 @@ class CitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-      params.require(:city).permit(:title, :phoneone, :phonetwo, :phonethree, :emailone, :emailtwo, :worktime, :adress, :name, :surname, :facebook, :instagram, :slug, :contact_id)
+      params.require(:city).permit(:title, :phoneone, :phonetwo, :phonethree, :emailone, :emailtwo, :worktime, :adress, :name, :surname, :facebook, :instagram, :slug, :contact_id, :max_limit)
     end
 end

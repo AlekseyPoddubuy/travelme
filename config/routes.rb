@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 	
+  resources :points
   resources :cities
   resources :contacts
 	devise_for :admins

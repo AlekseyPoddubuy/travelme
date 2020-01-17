@@ -149,64 +149,73 @@
     </div>
   </div>
 </section>
-<section class="cities margin--tb-xl" id="city">
+<section class="points">
   <div class="container">
     <div class="row">
-      <% if @contact.cities.count == 0 %>
       <div class="col-lg-12">
-        <h3 class="cities__none">
-          Скоро открытие в Вашей области.
-        </h3>
+        <h1 class="points__h1">
+          <%= @contact.title %>
+        </h1>
       </div>
-      <% else %>
-      <% @cities.each do |city| %>
-      <!-- <div class="col-lg-2">
-        <%= image_tag "threeb.jpg", class: "cities__img" %>
-      </div> -->
-      <div class="col-lg-4">
+    </div>
+  </div>
+  <% @cities.order(title: :asc).each do |city| %>
+  <% if city.points.count != 0 %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="points__h2">
+          <%= city.title %>
+        </h2>
+      </div>
+      <% city.points.where(coming_soon: false).order(title: :asc).each_with_index do |point, index| %>
+      <div class="col-lg-4 col-md-6">
         <ul class="cities__ul">
+          <% if point.address != "" %>
           <li class="cities__li">
-            <h2 class="cities__h2">
-              <%= city.title %>
-            </h2>
+            <span class="text--bold">
+              Адрес:
+            </span>
+            <%= point.address %>
           </li>
-          <% if city.emailone != "" %>
+          <% end %>
+          <% if point.emailone != "" %>
           <li class="cities__li">
             <span class="text--bold">
               Email:
             </span>
             <a class="cities__link" href="mailto:<%= city.emailone %>">
-              <%= city.emailone %>
+              <%= point.emailone %>
             </a>
           </li>
           <% end %>
-          <% if city.emailtwo != "" %>
+          <% if point.emailtwo != "" %>
           <li class="cities__li">
             <span class="text--bold">
               Email:
             </span>
             <a class="cities__link" href="mailto:<%= city.emailtwo %>">
-              <%= city.emailtwo %>
+              <%= point.emailtwo %>
             </a>
           </li>
           <% end %>
-          <% if city.phoneone != "" %>
+          <% if point.phoneone != "" %>
           <li class="cities__li">
             <span class="text--bold">
               Моб.
             </span>
             <a href="tel:+<%= city.phoneone %>">
-              <%= city.phoneone %>
+              <%= point.phoneone %>
             </a>
           </li>
           <% end %>
-          <% if city.phonetwo != "" %>
+          <% if point.phonetwo != "" %>
           <li class="cities__li">
             <span class="text--bold">
               Моб.
             </span>
             <a href="tel:+<%= city.phonetwo %>">
-              <%= city.phonetwo %>
+              <%= point.phonetwo %>
             </a>
           </li>
           <% end %>
@@ -218,14 +227,6 @@
             <a href="tel:+<%= city.phonethree %>">
               <%= city.phonethree %>
             </a>
-          </li>
-          <% end %>
-          <% if city.adress != "" %>
-          <li class="cities__li">
-            <span class="text--bold">
-              Адрес:
-            </span>
-            <%= city.adress %>
           </li>
           <% end %>
           <% if city.worktime != "" %>
@@ -247,7 +248,27 @@
         </ul>
       </div>
       <% end %>
+
+      <% city.points.where(coming_soon: true).order(title: :asc).each_with_index do |point, index| %>
+      <% if point.coming_soon == true %>
+      <div class="col-lg-12">
+        <p class="coming-soon__p">
+          <%= index + 1 %>.
+          <span class="coming-soon__span pink--text">
+            Скоро
+          </span>
+          открытие официального представительства
+          <span class="coming-soon__span pink--text">
+            Travel Me Agency.
+          </span>
+        </p>
+      </div>
       <% end %>
+      <% end %>
+
     </div>
   </div>
+  <% end %>
+  <% end %>
 </section>
+<%= render 'components/footer' %>

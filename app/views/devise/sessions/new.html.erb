@@ -1,26 +1,54 @@
-<h2>Log in</h2>
+<section class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <%= image_tag "logo2.png", class: 'login__logo' %>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "login__input" %>
+        </div>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "login__input" %>
+        </div>
+        <div class="actions">
+          <%= f.submit "войти", class: "login__btn" %>
+        </div>
+        <% end %>
+      </div>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
+</section>
 
-<%= render "devise/shared/links" %>
+<style>
+  .login {
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .login__logo {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .login__input {
+    max-width: 300px;
+    padding: 7px 5px 7px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #e2e2e2;
+  }
+
+  .login__btn {
+    background-color: #e3505d;
+    max-width: 300px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+    
+  }
+</style>

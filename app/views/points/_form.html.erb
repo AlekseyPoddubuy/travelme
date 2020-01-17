@@ -1,0 +1,67 @@
+<%= form_with(model: point, local: true) do |form| %>
+<% if point.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(point.errors.count, "error") %> prohibited this point from being saved:</h2>
+
+  <ul>
+    <% point.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title, id: :point_title %>
+</div>
+
+<div class="field">
+  <%= form.label :phoneone %>
+  <%= form.text_field :phoneone, id: :point_phoneone %>
+</div>
+
+
+<div class="field">
+  ss
+  <%= form.check_box :coming_soon %>
+</div>
+<%= form.collection_select :city_id, City.order(:title), :id, :title, { include_blank: "Выберите область" }, class: "form-control" %>
+
+
+<div class="field">
+  <%= form.label :phonetwo %>
+  <%= form.text_field :phonetwo, id: :point_phonetwo %>
+</div>
+
+<div class="field">
+  <%= form.label :emailone %>
+  <%= form.text_field :emailone, id: :point_emailone %>
+</div>
+
+<div class="field">
+  <%= form.label :emailtwo %>
+  <%= form.text_field :emailtwo, id: :point_emailtwo %>
+</div>
+
+<div class="field">
+  <%= form.label :name %>
+  <%= form.text_field :name, id: :point_name %>
+</div>
+
+<div class="field">
+  <%= form.label :address %>
+  <%= form.text_field :address, id: :point_address %>
+</div>
+
+<div class="field">
+  <%= form.label :worktime %>
+  <%= form.text_field :worktime, id: :point_worktime %>
+</div>
+
+<div class="actions">
+  <%= form.submit %>
+</div>
+<% end %>

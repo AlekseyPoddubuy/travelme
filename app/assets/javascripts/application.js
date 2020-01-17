@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery3
+//= require rails-ujs
 //= require popper
 //= require jquery.slick
-//= require bootstrap/dist/js/bootstrap
 //= require_tree .
