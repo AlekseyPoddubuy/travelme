@@ -1,5 +1,5 @@
 class PointsController < ApplicationController
-  # before_action :authenticate_admin!
+  before_action :authenticate_admin!
   before_action :set_point, only: [:show, :edit, :update, :destroy]
   layout "admin"
 
