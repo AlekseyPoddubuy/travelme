@@ -1,5 +1,5 @@
 class PointsController < ApplicationController
-  before_action :authenticate_admin!
+  # before_action :authenticate_admin!
   before_action :set_point, only: [:show, :edit, :update, :destroy]
   layout "admin"
 
@@ -44,7 +44,7 @@ class PointsController < ApplicationController
   def update
     respond_to do |format|
       if @point.update(point_params)
-        format.html { redirect_to @point, notice: 'Point was successfully updated.' }
+        format.html { redirect_to points_url, notice: 'Point was successfully updated.' }
         format.json { render :show, status: :ok, location: @point }
       else
         format.html { render :edit }
