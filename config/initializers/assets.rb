@@ -12,6 +12,7 @@ Rails.application.config.assets.precompile += %w( jqformap.js )
 Rails.application.config.assets.precompile += %w( map_init-min.js )
 Rails.application.config.assets.precompile += %w( map_data.js )
 Rails.application.config.assets.precompile += %w( cusel-2.5-min.js )
+Rails.application.config.assets.precompile += %w( admin.css )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.

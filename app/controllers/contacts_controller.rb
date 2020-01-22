@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-
+  layout "admin", except: [:index, :show]
   # GET /contacts
   # GET /contacts.json
   def index

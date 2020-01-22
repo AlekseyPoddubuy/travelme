@@ -12,56 +12,49 @@
 <% end %>
 
 
+<div class="row">
+  <div class="col-lg-6">
+    <%= form.text_field :title, class: "form-control admin__input", placeholder: "Название города" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :phoneone, class: "form-control admin__inputmargin--bottom-l margin--bottom-l", placeholder: "Номер телефона" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :phonetwo, class: "form-control admin__input margin--bottom-l", placeholder: "Номер телефона 2" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.collection_select :city_id, City.order(:title), :id, :title, { include_blank: "Выберите город" }, class: "form-control margin--bottom-l" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :emailone, class: "form-control admin__input margin--bottom-l", placeholder: "Email 1" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :emailtwo, class: "form-control admin__input margin--bottom-l", placeholder: "Email 2" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :name, class: "form-control admin__input margin--bottom-l", placeholder: "Имя и Фамилия точки продаж" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :address, class: "form-control admin__input margin--bottom-l", placeholder: "Адрес точки продаж" %>
+  </div>
+  <div class="col-lg-6">
+    <%= form.text_field :worktime, class: "form-control admin__input margin--bottom-l", placeholder: "Рабочее время" %>
+  </div>
+  <div class="col-lg-6">
 
-<div class="field">
-  <%= form.label :title %>
-  <%= form.text_field :title, id: :point_title %>
-</div>
+    <div class="form-check">
+      <%= form.check_box :coming_soon, class: "form-check-input" %>
+      <label class="form-check-label" for="defaultCheck1">
+        Точка ожидает открытия?
+      </label>
+    </div>
+    <p>
+    </p>
+  </div>
 
-<div class="field">
-  <%= form.label :phoneone %>
-  <%= form.text_field :phoneone, id: :point_phoneone %>
-</div>
-
-
-<div class="field">
-  ss
-  <%= form.check_box :coming_soon %>
-</div>
-<%= form.collection_select :city_id, City.order(:title), :id, :title, { include_blank: "Выберите область" }, class: "form-control" %>
-
-
-<div class="field">
-  <%= form.label :phonetwo %>
-  <%= form.text_field :phonetwo, id: :point_phonetwo %>
-</div>
-
-<div class="field">
-  <%= form.label :emailone %>
-  <%= form.text_field :emailone, id: :point_emailone %>
-</div>
-
-<div class="field">
-  <%= form.label :emailtwo %>
-  <%= form.text_field :emailtwo, id: :point_emailtwo %>
-</div>
-
-<div class="field">
-  <%= form.label :name %>
-  <%= form.text_field :name, id: :point_name %>
-</div>
-
-<div class="field">
-  <%= form.label :address %>
-  <%= form.text_field :address, id: :point_address %>
-</div>
-
-<div class="field">
-  <%= form.label :worktime %>
-  <%= form.text_field :worktime, id: :point_worktime %>
 </div>
 
 <div class="actions">
-  <%= form.submit %>
+  <%= form.submit class: "admin__btn", value: "Добавить город" %>
 </div>
 <% end %>

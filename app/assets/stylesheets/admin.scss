@@ -1,39 +1,40 @@
+@import "bootstrap/dist/css/bootstrap";
+@import "normalize";
+
+.header {
+	background-color: #fff;
+	padding: 17px 0;
+}
+.menu {
+  text-align: right;
+}
+.menu__link {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #e3505d;
+}
+
 .admin {
-	margin-bottom: 30px;
-	margin-top: 30px;	
-	p {
-		font-size: 20px;
-		margin: 15px 0 15px 0;
-	}
-}
-.adm-menu {
-	li {
-		padding: 5px 5px 5px 15px ;
-		&:hover {
-			background-color: #d2b51c;
-			cursor: pointer;
-			color: #fff;
-		}
-	}
-}
-.adm-mn {
-	background-color: gold;
-	font-size: 18px;
-	padding: 7px 10px 7px 15px;
-}
-.cnt, .meta {
-	input, select {
-		margin-bottom: 15px;
-	}	
-}
-.admin-block {
-	padding-bottom: 20px;
+	padding: 50px 0;
 }
 
+.admin__h1 {
+	margin-bottom: 20px;
+}
 
-/* Devise login code */
+.admin__input {
+	width: 100%;
+}
 
+.admin__btn {
+	margin-top: 20px;
+	background-color: #e3505d ;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+	padding: 10px 25px;
+}
 
-.login-in {
-	text-align: center;
+.margin--bottom-l {
+	margin-bottom: 10px;
 }

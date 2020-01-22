@@ -1,11 +1,12 @@
 class PointsController < ApplicationController
   before_action :authenticate_admin!
   before_action :set_point, only: [:show, :edit, :update, :destroy]
+  layout "admin"
 
   # GET /points
   # GET /points.json
   def index
-    @points = Point.all
+    @points = Point.order(title: :asc)
   end
 
   # GET /points/1
@@ -29,7 +30,7 @@ class PointsController < ApplicationController
 
     respond_to do |format|
       if @point.save
-        format.html { redirect_to @point, notice: 'Point was successfully created.' }
+        format.html { redirect_to points_url, notice: 'Point was successfully created.' }
         format.json { render :show, status: :created, location: @point }
       else
         format.html { render :new }

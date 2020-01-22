@@ -11,77 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :city_title %>
-  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <%= form.text_field :title, class: "form-control admin__input", placeholder: "Название города" %>
+    </div>
 
-  <%= form.number_field :max_limit %>
-  <div class="field">
-    <%= form.collection_select :contact_id, Contact.order(:title), :id, :title, { include_blank: "Выберите область" }, class: "form-control" %>
+    <div class="col-lg-6">
+      <%= form.collection_select :contact_id, Contact.order(:title), :id, :title, { include_blank: "Выберите область" }, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :phoneone %>
-    <%= form.text_field :phoneone, id: :city_phoneone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phonetwo %>
-    <%= form.text_field :phonetwo, id: :city_phonetwo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phonethree %>
-    <%= form.text_field :phonethree, id: :city_phonethree %>
-  </div>
-
-  <div class="field">
-    <%= form.label :emailone %>
-    <%= form.text_field :emailone, id: :city_emailone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :emailtwo %>
-    <%= form.text_field :emailtwo, id: :city_emailtwo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :worktime %>
-    <%= form.text_field :worktime, id: :city_worktime %>
-  </div>
-
-  <div class="field">
-    <%= form.label :adress %>
-    <%= form.text_field :adress, id: :city_adress %>
-  </div>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :city_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :surname %>
-    <%= form.text_field :surname, id: :city_surname %>
-  </div>
-
-  <div class="field">
-    <%= form.label :facebook %>
-    <%= form.text_field :facebook, id: :city_facebook %>
-  </div>
-
-  <div class="field">
-    <%= form.label :instagram %>
-    <%= form.text_field :instagram, id: :city_instagram %>
-  </div>
-
-  <div class="field">
-    <%= form.label :slug %>
-    <%= form.text_field :slug, id: :city_slug %>
-  </div>
-
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "admin__btn", value: "Добавить город" %>
   </div>
 <% end %>

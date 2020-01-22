@@ -1,6 +1,7 @@
 class CitiesController < ApplicationController
   before_action :authenticate_admin!
   before_action :set_city, only: [:show, :edit, :update, :destroy]
+  layout "admin"
 
   # GET /cities
   # GET /cities.json
@@ -32,7 +33,7 @@ class CitiesController < ApplicationController
 
     respond_to do |format|
       if @city.save
-        format.html { redirect_to @city, notice: 'City was successfully created.' }
+        format.html { redirect_to cities_url, notice: 'City was successfully created.' }
         format.json { render :show, status: :created, location: @city }
       else
         format.html { render :new }
@@ -68,11 +69,11 @@ class CitiesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_city
-      @city = City.friendly.find(params[:id])
+      @city = City.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-      params.require(:city).permit(:title, :phoneone, :phonetwo, :phonethree, :emailone, :emailtwo, :worktime, :adress, :name, :surname, :facebook, :instagram, :slug, :contact_id, :max_limit)
+      params.require(:city).permit(:title, :contact_id)
     end
 end
