@@ -13,5 +13,6 @@
 //= require jquery3
 //= require rails-ujs
 //= require popper
+//= require remodal
 //= require jquery.slick
 //= require_tree .

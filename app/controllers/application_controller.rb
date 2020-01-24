@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
-	protect_from_forgery with: :exception
+  protect_from_forgery with: :exception
+	before_action :big_scope
+	
+	def big_scope
+		@selection = Selection.new
+	end
 
 =begin	
 	before_action :set_locale

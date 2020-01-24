@@ -10,6 +10,9 @@
 @import "footer";
 @import "headertwo";
 @import "contacts";
+@import "remodal-default-theme";
+@import "remodal";
+
 
 img {
   width: 100%;
@@ -76,6 +79,19 @@ body {
 
 .margin--tb-xl {
   margin: 30px 0;
+}
+
+.admin__url {
+  text-align: center;
+}
+
+.admin__enter {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #e3505d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 // Thanks

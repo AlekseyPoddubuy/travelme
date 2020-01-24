@@ -1,6 +1,6 @@
 .header-trans {
-	padding: 10px 0;
-	background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .border--left {
@@ -29,8 +29,13 @@
   margin-left: 15px;
 }
 
-.icon--ins, .icon--fb {
+.icon--ins,
+.icon--fb {
   margin-left: 5px;
+}
+
+.icon--fb {
+  margin-right: 13px;
 }
 
 .menu__call {
@@ -46,6 +51,27 @@
   &:hover {
     color: gold;
     text-decoration: none;
+  }
+}
+
+.menu-phones {
+  text-align: right;
+  margin: 10px -52px 0 0;
+}
+
+.selection {
+  text-align: right;
+  margin-top: 9px;
+}
+
+.selection__btn {
+  background-color: #e3505d;
+  color: #ffffff;
+  padding: 4px 15px 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
   }
 }
 
@@ -140,4 +166,41 @@
 
 .test__li {
   margin-bottom: -2px;
+}
+
+.selection-form {
+  padding: 20px 0;
+}
+
+.selection-form__input {
+  border: none;
+  border-radius: 7px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 25px;
+  font-size: 14px;
+  color: #e3505d;
+}
+
+.selection-form__textarea {
+  border: none;
+  max-width: 630px;
+  min-height: 100px;
+  border-radius: 7px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 15px 10px 10px 21px;
+  font-size: 14px;
+  color: #e3505d;
+}
+
+.selection-form__btn {
+  background-color: #e3505d;
+  border: none;
+  padding: 15px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 7px;
 }

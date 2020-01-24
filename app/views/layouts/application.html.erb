@@ -22,7 +22,49 @@
 </head>
 
 <body>
+	<% if admin_signed_in? %>
+	<%= link_to points_path do %>
+	<div class="admin__enter">
+		Админ панель
+	</div>
+	<% end %>
+	<% end %>
 	<%= yield %>
+	<div class="remodal" data-remodal-id="modal">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1>Подобрать тур онлайн</h1>
+		<%= form_for @selection, :html => {class: 'selection-form'} do |f| %>
+		<div class="row">
+			<div class="col-lg-12">
+				<%= f.text_field :name, required: true, placeholder: 'Ваше ФИО', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :phone, required: true, placeholder: 'Ваш номер телефона', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :city, required: true, placeholder: 'Ваш город', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :tour, required: true, placeholder: 'Страна, город, курорт', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :days, required: true, placeholder: 'Количество дней', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :budget, required: true, placeholder: 'Ваш бюджет', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_field :mail, placeholder: 'Ваш email', class: "selection-form__input" %>
+			</div>
+			<div class="col-lg-12">
+				<%= f.text_area :text, placeholder: ' Ваши пожелания или замечания', class: "selection-form__textarea" %>
+			</div>
+			<div class="col-lg-12">
+				<%=f.submit 'Подать заявку', class: "selection-form__btn"  %>
+			</div>
+		</div>
+		<% end %>
+	</div>
 </body>
 <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
 <script>

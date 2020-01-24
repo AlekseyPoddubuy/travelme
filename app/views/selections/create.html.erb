@@ -1,0 +1,23 @@
+<section class="thanks">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text--center">
+        <h1 class="thanks__h1">
+          Спасибо за Вашу заявку на подбор тура!
+        </h1>
+        <h2 class="thanks__h2">
+          После обработки заявки с Вами свяжеться наш менеджер.
+        </h2>
+        <p class="thanks__p">
+          *Через 5 секунд Вы автоматически будете перенаправленны на главную страницу.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  setTimeout(function () {
+      window.location.href = "<%= root_url %>"; // The URL that will be redirected too.
+  }, 5000); // The bigger the number the longer the delay.
+</script>

@@ -20,23 +20,37 @@
 				</ul>
 			</div>
 			<div class="col-lg-8 col-md-12 d-none d-md-none d-lg-block">
-				<nav class="menu">
-					<span class="menu__span text--black text--bold">UA:</span>
-					<a class="menu__phone text--bold pink--text" href="tel:+380443346319">+38044‎3346319</a>
-					<span class="menu__span text--black text--bold">EU:</span>
-					<a class="menu__phone text--bold pink--text" href="tel:+442080896595">+442080896595</a>
-					<a class="icon--mail" href="mailto:info@travel-me.agency">
-						<div class="tooltip">
-								<%= image_tag "mail-opt.png", class: "menu__img tooltip" %>
-							<span class="tooltiptext">info@travel-me.agency</span>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="menu-phones">
+							<span class="menu__span text--black text--bold">UA:</span>
+							<a class="menu__phone text--bold pink--text" href="tel:+380443346319">+38044‎3346319</a>
+							<span class="menu__span text--black text--bold">EU:</span>
+							<a class="menu__phone text--bold pink--text" href="tel:+442080896595">+442080896595</a>
+							<a class="icon--mail" href="mailto:info@travel-me.agency">
+								<div class="tooltip">
+									<%= image_tag "mail-opt.png", class: "menu__img tooltip" %>
+									<span class="tooltiptext">info@travel-me.agency</span>
 								</div>
-					</a>
-					<a class="icon--ins" href="https://www.instagram.com/travel_me_agency/" target="_blank">
-						<%= image_tag "instagram-opt.png", class: "menu__instagram" %>
-					</a>
-					<a class="icon--fb" href="https://www.facebook.com/Travel-me-Agency-1910529205645053/">
-						<%= image_tag "facebook-opt.png", class: "menu__facebook" %>
-					</a>
+							</a>
+							<a class="icon--ins" href="https://www.instagram.com/travel_me_agency/" target="_blank">
+								<%= image_tag "instagram-opt.png", class: "menu__instagram" %>
+							</a>
+							<a class="icon--fb" href="https://www.facebook.com/Travel-me-Agency-1910529205645053/">
+								<%= image_tag "facebook-opt.png", class: "menu__facebook" %>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="selection">
+							<a data-remodal-target="modal" class="selection__btn">Подать заявку онлайн</a>
+						</div>
+					</div>
+				</div>
+			
+			
+
+				<nav class="menu">
 					<ul class="menu__ul">
 						<li class="menu__li">
 							<%= link_to "Подобрать тур", root_path + '#search', class: 'menu__link' %>
@@ -96,6 +110,9 @@
 				</ul>
 			</div>
 			<div class="col-lg-12 d-lg-none d-md-none">
+				<div class="mobile-selection">
+					<a data-remodal-target="modal" class="selection__btn">Подать заявку онлайн</a>
+				</div>
 				<ul class="mobile-nav__ul">
 					<li class="mobile-nav__li">
 						<%= image_tag "more-icon-big.png", class: "hamburger js-toggle-menu mobile-nav__icon" %>

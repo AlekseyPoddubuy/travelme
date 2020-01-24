@@ -17,8 +17,7 @@ Rails.application.routes.draw do
 	get 'admin' => 'pages#admin', as: :admin
 	get 'franchise' => 'pages#landing', as: :franchise
 	resources :comments, only: [:new, :create]	
+	resources :selections, only: [:new, :create]	
 
-	scope ":locale" do
-	end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
