@@ -219,30 +219,20 @@
             </a>
           </li>
           <% end %>
-          <% if city.phonethree != "" %>
-          <li class="cities__li">
-            <span class="text--bold">
-              Моб.
-            </span>
-            <a href="tel:+<%= city.phonethree %>">
-              <%= city.phonethree %>
-            </a>
-          </li>
-          <% end %>
-          <% if city.worktime != "" %>
+          <% if point.worktime != "" %>
           <li class="cities__li">
             <span class="text--bold">
               График:
             </span>
-            <%= city.worktime %>
+            <%= point.worktime %>
           </li>
           <% end %>
-          <% if city.name != "" %>
+          <% if point.name != "" %>
           <li class="cities__li">
             <span class="text--bold">
               Менеджер:
             </span>
-            <%= city.name %> <%= city.surname %>
+            <%= point.name %>
           </li>
           <% end %>
         </ul>
