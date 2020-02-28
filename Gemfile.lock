@@ -692,7 +692,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.2)
-    puma (3.11.3)
+    puma (3.12.3)
     rack (2.0.4)
     rack-proxy (0.6.4)
       rack
@@ -809,7 +809,7 @@ DEPENDENCIES
   paperclip (~> 6.0.0)
   pg (~> 0.21)
   popper_js (~> 1.12.9)
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.5)
   remodal-rails
   rmagick (~> 2.16)
