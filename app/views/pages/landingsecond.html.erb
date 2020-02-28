@@ -24,7 +24,8 @@
       <div class="col-lg-10 d-none d-md-none d-lg-block">
         <div class="phones">
           <span class="phones__call">Колл-центр:</span>
-          <a class="phones__link" href="tel:+38 044 333 67 32"> +38 044 333 67 32</a>
+          <a class="phones__link" href="tel:+380443346319">+38 044 ‎334 63 19 /</a>
+          <a class="phones__link" href="tel:+442080896595">+442 080 896 595</a>
         </div>
         <nav class="nav">
           <%= link_to "Главная", index_path, class: "nav__link" %>
@@ -113,16 +114,16 @@
   </div>
   <div class="banner-triggers">
     <h1 class="banner-triggers__h1">
-      купи франшизу международной сети агентств
+      Выгодная франшиза от TRAVEL ME AGENCY
     </h1>
     <h2 class="banner-triggers__h2">
-      всего за 99 долларов сша!
+      для открытия собственного туристического агенства
     </h2>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h3 class="banner-triggers__h3">
-            …и открой свой бизнес уже завтра вместе с нами!
+            Купи франшизу всего за 1 доллар сша.. и открой свой бизнес уже завтра вместе с нами!
           </h3>
         </div>
       </div>
@@ -131,7 +132,7 @@
   <div class="container text--center">
     <div class="row">
       <div class="col-lg-12">
-        <%= link_to "Купить за 99$", "#get", class: "pink--button flowing-scroll" %>
+        <%= link_to "Купить за 1$", "#callback", class: "pink--button flowing-scroll" %>
       </div>
     </div>
   </div>
@@ -142,43 +143,13 @@
     <div class="row">
       <div class="col-lg-12 text--center">
         <h3 class="ways__h3">
-          Кто может покупать франшизу?
+          Основные направления деятельности сети агенств TRAVEL ME AGENCY:
         </h3>
-        
-      </div>
-      <div class="col-lg-6">
         <p class="ways__p">
-          Стать нашим франчайзи может каждый активный гражданин из любой страны, желающий иметь свой независимый
-          туристический бизнес.
-        </p>
-        <p class="ways__p text--bold">
-          1. Формат туристического агентства (с наличием офиса)
-        </p>
-        <p class="ways__p text--bold">
-          2. Формат индивидуальной агентской деятельности (имеете все полномочия без наличия офиса)
-        </p>
-        <p class="ways__p">
-          <span class="ways__span text--bold">
-            TRAVEL ME AGENCY
-          </span>
-          – cовременная лидирующая международная сеть туристичестких агентств, которая активно
+          TRAVEL ME AGENCY – cовременная лидирующая международная сеть туристичестких агентств, которая активно
           развивается на территории 8 стран Европейского Союза. С 2018 года компания запустила продажу собственных
           франшиз на рынках России, Украины, Белорусии, Казахстана и других странах СНГ.
         </p>
-        <p class="ways__p">
-          Стать владельцем собственного офиса TRAVEL ME AGENCY теперь может каждый из вас.
-        </p>
-        <p class="ways__span">
-          «Мир без границ!» - главный лозунг компании.
-        </p>
-      </div>
-      <div class="col-lg-6">
-        <%= image_tag "office4.jpg" %>
-      </div>
-      <div class="col-lg-12 text--center">
-        <h3 class="ways__h3">
-          Основные направления деятельности сети агенств TRAVEL ME AGENCY:
-        </h3>
       </div>
       <div class="col-lg-6 padding-lr--m">
         <div class="ways-item text--center">
@@ -259,16 +230,19 @@
         </div>
       </div>
       <div class="col-lg-12 text--center">
-        <h4 class="ways__h4">
-          Окрой свой успешный независимый бизнес, что даст возможность развиваться и получать стабильную прибыль за счет
-          повышенных комиссий.
-        </h4>
+        <p class="ways__p">
+          С 2018 года компания запустила продажу собственных франшиз на рынках России, Украины, Белорусии, Казахстана и
+          других странах СНГ.
+        </p>
+        <p class="ways__p">
+          Стать владельцем собственного офиса TRAVEL ME AGENCY теперь может каждый из вас.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <section class="callback bgc--white offset-tb--xl" id="callback">
+<section class="callback bgc--white offset-tb--xl" id="callback">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text--center">
@@ -300,72 +274,10 @@
     </div>
     <% end %>
   </div>
-</section> -->
+</section>
 
 <section class="get" id="get">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="get__h1">
-          Команда специалистов отдела START UP – поможет с открытием офиса «под ключ» с момента подачи вашей заявки, до
-          момента продажи первого тура, взяв на себя все доверенные обязательства
-        </h1>
-      </div>
-      <div class="col-lg-6">
-        <%= image_tag "office2.jpg", class: "get__img" %>
-      </div>
-      <div class="col-lg-6">
-        <p class="get__p">
-          Приобретая франшизу
-          <span class="get__span text--bold">
-            TRAVEL ME AGENCY
-          </span>
-          вы получаете:
-        </p>
-        <ul class="get__ul">
-          <li class="get__li">
-            - Полная поддержка специалистами главного офиса в получении всех разрешительных документов для регистрации
-            юр.лица в кратчайшие сроки
-          </li>
-          <li class="get__li">
-            - Бухгалтерская и юридическая поддержка
-          </li>
-          <li class="get__li">
-            - Получение лицензий, банковской гарантии
-          </li>
-          <li class="get__li">
-            - Контракты со всеми основными действующими туроператорами вашей страны с повышенной агентской комиссией
-          </li>
-          <li class="get__li">
-            - Собственный международный корпоративный сайт www.travel-me.agency, с контактами вашего офиса
-          </li>
-          <li class="get__li">
-            - Единый Колл-центр сети
-          </li>
-          <li class="get__li">
-            - Онлайн системы для поиска туров, аренды недвижимости и авто, страхования
-          </li>
-          <li class="get__li">
-            - Помошь в поиске будущего офисе в вашем регионе
-          </li>
-          <li class="get__li">
-            - Бесплатное обучение франчайзи и менеджеров агентства:
-            (собственная школа туризма, обучающие семинары по страхованию, вебинары)
-          </li>
-          <li class="get__li">
-            - Подготовка рекламной и промо компании при открытии офиса
-          </li>
-          <li class="get__li">
-            - Запуск точки продаж
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- <div class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-7 padding-lr--z ">
         <picture>
@@ -417,7 +329,7 @@
         </p>
       </div>
     </div>
-  </div> -->
+  </div>
 </section>
 
 <section class="steps" id="for">
@@ -431,23 +343,23 @@
         </div>
       </div>
       <div class="row steps-row--one">
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/office.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
-              Собственный, либо в аренде офис или островок от 5-25м²
+              Собственный, либо арендуемый офис, или островок open space от 5-25 кв.м
             </p>
           </div>
         </div>
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/man.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
-              Желание иметь прибыльный бизнес
+              Желание иметь свой прибыльный бизнес
             </p>
           </div>
         </div>
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/education.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
@@ -457,15 +369,15 @@
         </div>
       </div>
       <div class="row steps-row--two">
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/help.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
-              В остальном мы поможем!
+              Во всем остальном мы вам поможем!
             </p>
           </div>
         </div>
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/speaker.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
@@ -473,7 +385,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-4 col-4 text--center">
+        <div class="col-lg-4 text--center">
           <div class="steps-item">
             <%= image_tag "landing/career.png", class: "steps-bgc--man" %>
             <p class="steps-item__p">
@@ -529,7 +441,7 @@
         </h5>
       </div>
       <div class="col-lg-6">
-        <div class="more-item more-item--height">
+        <div class="more-item">
           <p class="more-item__title">
             Мы с Вами на связи
             <span class="more-item__span">
@@ -543,44 +455,40 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="more-item more-item--height">
+        <div class="more-item">
           <p class="more-item__title">
             <span class="more-item__span">
-              CRM
+              Множество
             </span>
-            и
-            <span class="more-item__span">
-              корпоративный сайт
-            </span>
+            туристических операторов
           </p>
           <p class="more-item__desc">
-            Каждый новый офис получает доступ к собственной CRM системе компании, а так же корпоративный сайт
+            Если вы найдете оператора на рынке услуг, с которым мы еще не сотрудничаем – на
+            следующий день данный оператор станет нашим новым официальным партнером
           </p>
         </div>
       </div>
       <div class="col-lg-12 offset-top--l text--center">
         <div class="more-item">
-          <!-- <p class="more-item__title">
+          <p class="more-item__title">
             <span class="more-item__span">
-              TRAVEL ME AGENCY
+              Купить франшизу TRAVEL ME AGENCY
             </span>
-          </p> -->
+          </p>
           <p class="more-item__desc">
-            Присоединяясь к TRAVEL ME AGENCY больше нет ограничений в фиксированном количестве туроператоров для
-            сотрудничества. Сеть агентств работает со всеми существующими туроператорами вашей страны. Если вы найдете
-            оператора на рынке услуг, с которым мы еще не сотрудничаем – на следующий день данный оператор станет нашим
-            новым официальным партнером!
+            Купить франшизу TRAVEL ME AGENCY теперь возможно и в вашей стране! Позвоните по указанным ниже телефонам,
+            наши специалисты с удовольствием проконсультируют более детально вас по всем вопросам приобретения франшизы
+            в вашем регионе.
           </p>
         </div>
       </div>
       <div class="col-lg-12">
         <p class="more__p more-item__span text--center">
-          Стоимость франшизы - 99$
+          Стоимость франшизы: (Украина и в странах СНГ) - 1 $ USD
         </p>
       </div>
-      <div class="col-lg-6 padding-bottom--l ">
-        <%= image_tag "office3.jpg" %>
-        <!-- <%= form_for @comment, :html => {class: 'form'} do |f| %>
+      <div class="col-lg-6 bgc--grey padding-bottom--l ">
+        <%= form_for @comment, :html => {class: 'form'} do |f| %>
         <div class="row">
           <div class="col-lg-12">
             <%= f.text_field :name, required: true, placeholder: 'Ваше ФИО', class: "form__input" %>
@@ -601,35 +509,29 @@
             <%=f.submit 'Отправить сообщение', class: "form__btn"  %>
           </div>
         </div>
-        <% end %> -->
+        <% end %>
       </div>
       <div class="col-lg-6">
-        <h2 class="contacts__h2">
-          Купить франшизу TRAVEL ME AGENCY теперь возможно и в вашей стране!
-        </h2>
-        <p class="contacts__desc">
-          Позвоните по указанным ниже телефонам, наши специалисты с удовольствием проконсультируют более детально вас по
-          всем вопросам приобретения франшизы в вашем регионе.
-        </p>
-        <!-- <p class="contacts__desc">
-          После чего в кратчайшие сроки с вами свяжется наш специалист по международному франчайзингу.
-        </p> -->
-        <p class="contacts__p text--center">
-          Отдел международного франчайзинга:
-        </p>
-        <a class="contacts__link text--center" href="tel:+380443336732">
-          +38 044 333 67 32 - Украина
-        </a>
         <p class="contacts__desc">
           Заявку на звонок, а так же на получение презентации франшизы вы можете оставить, написав письмо на
-          корпоративную почту компании: <a href="mailto:franchise@travel-me.agency" class="contacts__desc--link">
-            franchise@travel-me.agency
-          </a> , указав ваше имя, страну, регион, номер телефона для
-          связи.
+          корпоративную почту компании: franchise@travel-me.agency, указав ваше имя, страну, регион, номер телефона для
+          связи. После чего в кратчайшие сроки с вами свяжется наш специалист по международному франчайзингу.
         </p>
         <p class="contacts__desc">
           После чего в кратчайшие сроки с вами свяжется наш специалист по международному франчайзингу.
         </p>
+        <p class="contacts__p text--center">
+          Украина:
+        </p>
+        <a class="contacts__link text--center" href="tel:+380443346319">
+          +38 044 334 63 19
+        </a>
+        <p class="contacts__p text--center">
+          Страны СНГ:
+        </p>
+        <a class="contacts__link text--center" href="tel:+380443346319">
+          +38 044 334 63 19
+        </a>
       </div>
     </div>
   </div>
@@ -637,7 +539,7 @@
 
 <footer class="footer text--center">
   <p class="footer__p">
-    Международная сеть туристических агентств Travel-me.agency. Все права защищены. © 2020
+    Международная сеть туристических агентств Travel-me.agency. Все права защищены. © 2019
   </p>
 </footer>
 
