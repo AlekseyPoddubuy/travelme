@@ -186,8 +186,6 @@ body {
   padding-bottom: 4px;
 }
 
-
-
 // Steps
 
 .steps {
@@ -391,8 +389,6 @@ body {
   }
 }
 
-
-
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -411,13 +407,12 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  
   .banner {
     background-image: none !important;
     text-align: left !important;
     padding: 15px 0;
   }
-  
+
   .logo__img {
     margin-top: 0 !important;
   }
@@ -488,17 +483,43 @@ body {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .hamburger {
-    margin-top: 15px;
-    max-width: 40px;
+    color: #000;
   }
 
   .mob-contacts {
-    margin-top: 10px;
+    margin-top: 28px;
     margin-left: 24px;
   }
   .mob-contacts__phone {
     display: inline-block !important;
     font-size: 14px;
+  }
+
+  .banner-triggers__h1 {
+    font-size: 19px !important;
+  }
+
+  .ways__h3 {
+    font-size: 18px !important;
+  }
+
+  .ways__span {
+    text-align: center;
+    font-size: 16px !important;
+  }
+
+  .steps-bgc__p,
+  .callback__h3,
+  .more__h5 {
+    font-size: 20px;
+  }
+
+  .more-item {
+    text-align: center;
+  }
+
+  .more-item__span {
+    text-align: center;
   }
 
   .offset--top {
